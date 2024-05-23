@@ -32,8 +32,8 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            userlogin = new TextBox();
-            uplogin = new TextBox();
+            namelogin = new TextBox();
+            passlogin = new TextBox();
             label2 = new Label();
             label3 = new Label();
             createacclink = new LinkLabel();
@@ -48,7 +48,7 @@
             pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(220, -67);
+            pictureBox1.Location = new Point(218, -67);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(471, 349);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,23 +79,23 @@
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
             // 
-            // userlogin
+            // namelogin
             // 
-            userlogin.Anchor = AnchorStyles.Top;
-            userlogin.Location = new Point(320, 233);
-            userlogin.Multiline = true;
-            userlogin.Name = "userlogin";
-            userlogin.Size = new Size(326, 28);
-            userlogin.TabIndex = 5;
+            namelogin.Anchor = AnchorStyles.Top;
+            namelogin.Location = new Point(320, 233);
+            namelogin.Multiline = true;
+            namelogin.Name = "namelogin";
+            namelogin.Size = new Size(326, 28);
+            namelogin.TabIndex = 5;
             // 
-            // uplogin
+            // passlogin
             // 
-            uplogin.Anchor = AnchorStyles.Top;
-            uplogin.Location = new Point(320, 344);
-            uplogin.Multiline = true;
-            uplogin.Name = "uplogin";
-            uplogin.Size = new Size(326, 28);
-            uplogin.TabIndex = 6;
+            passlogin.Anchor = AnchorStyles.Top;
+            passlogin.Location = new Point(320, 344);
+            passlogin.Multiline = true;
+            passlogin.Name = "passlogin";
+            passlogin.Size = new Size(326, 28);
+            passlogin.TabIndex = 6;
             // 
             // label2
             // 
@@ -127,12 +127,14 @@
             createacclink.Anchor = AnchorStyles.Top;
             createacclink.AutoSize = true;
             createacclink.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            createacclink.LinkBehavior = LinkBehavior.HoverUnderline;
             createacclink.Location = new Point(650, 387);
             createacclink.Name = "createacclink";
             createacclink.Size = new Size(115, 17);
             createacclink.TabIndex = 11;
             createacclink.TabStop = true;
             createacclink.Text = "Não possui conta?";
+            createacclink.LinkClicked += createacclink_LinkClicked;
             // 
             // entrarbtn
             // 
@@ -142,7 +144,7 @@
             entrarbtn.FlatAppearance.MouseDownBackColor = Color.Transparent;
             entrarbtn.FlatStyle = FlatStyle.Popup;
             entrarbtn.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            entrarbtn.Location = new Point(373, 427);
+            entrarbtn.Location = new Point(370, 449);
             entrarbtn.Name = "entrarbtn";
             entrarbtn.Size = new Size(218, 70);
             entrarbtn.TabIndex = 12;
@@ -159,10 +161,10 @@
             ClientSize = new Size(919, 571);
             Controls.Add(createacclink);
             Controls.Add(entrarbtn);
-            Controls.Add(uplogin);
+            Controls.Add(passlogin);
             Controls.Add(label3);
             Controls.Add(pictureBox3);
-            Controls.Add(userlogin);
+            Controls.Add(namelogin);
             Controls.Add(label2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -179,8 +181,8 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private TextBox userlogin;
-        private TextBox uplogin;
+        private TextBox namelogin;
+        private TextBox passlogin;
         private Label label2;
         private Label label3;
         private LinkLabel createacclink;
