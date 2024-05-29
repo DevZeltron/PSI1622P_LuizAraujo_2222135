@@ -14,7 +14,7 @@ namespace ProjectoC_
     public partial class criacaoconta : Form
     {
 
-        private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=pizzaria_raimundo;Trusted_Connection=True;TrustServerCertificate=True";
+        private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
         private SqlConnection connection = new SqlConnection(stringconexao);
 
         public string NomeUtilizador { get; set; }
@@ -32,11 +32,10 @@ namespace ProjectoC_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string usercria = criaruser.Text.Trim();
-            string passcria = criarsenha.Text.Trim();
+            NomeUtilizador = criaruser.Text.Trim();
+            Password = criarsenha.Text.Trim();
 
-
-            if (string.IsNullOrEmpty(usercria) || string.IsNullOrEmpty(passcria))
+            if (string.IsNullOrEmpty(NomeUtilizador) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Por favor, preencha o nome de utilizador e a palavra-passe.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -44,31 +43,53 @@ namespace ProjectoC_
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(stringconexao))
+                if (NovoUtilizador(NomeUtilizador, Password))
                 {
-                    connection.Open();
-
-                    using (SqlCommand command = new SqlCommand("INSERT INTO criar_user (username_criar, password_criar) VALUES (@username_criar, @password_criar)", connection))
-                    {
-                        command.Parameters.AddWithValue("@username_criar", usercria);
-                        command.Parameters.AddWithValue("@password_criar", passcria);
-
-                        command.ExecuteNonQuery();  // Execute the command
-                    }
+                    MessageBox.Show("Conta criada com sucesso!!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
-
-                MessageBox.Show("Conta criada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                {
+                    MessageBox.Show("Erro ao criar a conta. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir usuário no banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao registrar a conta: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private bool NovoUtilizador(string username, string password)
+        {
+            string query = "INSERT INTO loginn (username, password) VALUES (@NomeUtilizador, @PalavraPasse)";
+
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@NomeUtilizador", username);
+                command.Parameters.AddWithValue("@PalavraPasse", password);
+
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao inserir usuário no banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
 
     }
 
 
-       
-    
+
+
 }

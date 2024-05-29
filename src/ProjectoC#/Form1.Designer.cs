@@ -169,7 +169,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Form1";
-            Text = "-";
+            Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

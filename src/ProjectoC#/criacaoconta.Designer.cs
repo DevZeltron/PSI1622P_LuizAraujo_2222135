@@ -123,6 +123,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             button1.Location = new Point(361, 454);
             button1.Name = "button1";

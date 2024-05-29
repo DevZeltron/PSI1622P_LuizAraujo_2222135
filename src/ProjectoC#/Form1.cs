@@ -7,8 +7,12 @@ namespace ProjectoC_
     public partial class Form1 : Form
     {
 
-        private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=pizzaria_raimundo;Trusted_Connection=True;TrustServerCertificate=True";
+        private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
         private SqlConnection connection = new SqlConnection(stringconexao);
+
+
+        public string NomeUtilizador { get; set; }
+        public string Password { get; set; }
 
         public Form1()
         {
@@ -23,29 +27,51 @@ namespace ProjectoC_
 
         private void entrarbtn_Click(object sender, EventArgs e)
         {
-            string nomeuser = namelogin.Text.Trim();
-            string passworduser = passlogin.Text.Trim();
+            NomeUtilizador = namelogin.Text.Trim();
+            Password = passlogin.Text.Trim();
 
-            if (string.IsNullOrEmpty(nomeuser) || string.IsNullOrEmpty(passworduser))
+            if (string.IsNullOrEmpty(NomeUtilizador) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Por favor, preencha o nome de utilizador e a palavra-passe.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            using (SqlConnection connection = new SqlConnection(stringconexao))
+            if (VerifyLogin(NomeUtilizador, Password))
             {
-                connection.Open();
+                MessageBox.Show("Login bem-sucedido!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Nome de utilizador ou palavra-passe incorretos. Por favor, tente novamente ou crie uma conta.", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-                using (SqlCommand command = new SqlCommand("INSERT INTO user_login (username, passwordlogin) VALUES (@username, @passwordlogin)", connection))
+        private bool VerifyLogin(string username, string password)
+        {
+            string query = "SELECT COUNT(1) FROM loginn WHERE username = @NomeUtilizador AND password = @Password";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(stringconexao))
                 {
-                    command.Parameters.AddWithValue("@Name", nomeuser);
-                    command.Parameters.AddWithValue("@Password", passworduser);
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@NomeUtilizador", username);
+                        command.Parameters.AddWithValue("@Password", password);
 
+                        int userCount = (int)command.ExecuteScalar();
+                        return userCount == 1;
+                    }
                 }
             }
-
-            MessageBox.Show("Login efetuado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
+
 
         private void createacclink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
