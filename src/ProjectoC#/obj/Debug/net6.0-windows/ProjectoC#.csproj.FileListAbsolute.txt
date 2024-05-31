@@ -63,3 +63,4 @@ C:\Users\2222135\OneDrive - Escola Digital\! PSI\Projeto C#\PSI1622P_LuizAraujo_
 C:\Users\2222135\OneDrive - Escola Digital\! PSI\Projeto C#\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\2222135\OneDrive - Escola Digital\! PSI\Projeto C#\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC#.csproj.CopyComplete
 C:\Users\2222135\OneDrive - Escola Digital\! PSI\Projeto C#\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC_.criacaoconta.resources
+C:\Users\2222135\OneDrive - Escola Digital\! PSI\Projeto C#\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC_.pizzas.resources
