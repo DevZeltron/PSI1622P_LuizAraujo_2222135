@@ -48,27 +48,57 @@ namespace ProjectoC_
 
         private bool VerifyLogin(string username, string password)
         {
+            
             string query = "SELECT COUNT(1) FROM loginn WHERE username = @NomeUtilizador AND password = @Password";
-
-            try
+            if (username == "admin")
             {
-                using (SqlConnection connection = new SqlConnection(stringconexao))
-                {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@NomeUtilizador", username);
-                        command.Parameters.AddWithValue("@Password", password);
 
-                        int userCount = (int)command.ExecuteScalar();
-                        return userCount == 1;
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(stringconexao))
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@NomeUtilizador", username);
+                            command.Parameters.AddWithValue("@Password", password);
+
+                            int userCount = (int)command.ExecuteScalar();
+                            return userCount == 1;
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(stringconexao))
+                    {
+                        connection.Open();
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@NomeUtilizador", username);
+                            command.Parameters.AddWithValue("@Password", password);
+
+                            int userCount = (int)command.ExecuteScalar();
+                            return userCount == 1;
+                        }
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
         }
 
