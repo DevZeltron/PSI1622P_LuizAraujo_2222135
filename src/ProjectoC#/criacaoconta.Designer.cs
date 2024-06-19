@@ -59,7 +59,7 @@
             pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(213, 215);
+            pictureBox2.Location = new Point(237, 183);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 50);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -71,7 +71,7 @@
             pictureBox3.Anchor = AnchorStyles.Top;
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(213, 343);
+            pictureBox3.Location = new Point(237, 311);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(100, 50);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -85,7 +85,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(291, 365);
+            label3.Location = new Point(315, 333);
             label3.Name = "label3";
             label3.Size = new Size(148, 28);
             label3.TabIndex = 9;
@@ -98,7 +98,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(291, 237);
+            label1.Location = new Point(315, 205);
             label1.Name = "label1";
             label1.Size = new Size(175, 28);
             label1.TabIndex = 10;
@@ -108,7 +108,7 @@
             // criaruser
             // 
             criaruser.Anchor = AnchorStyles.Top;
-            criaruser.Location = new Point(305, 268);
+            criaruser.Location = new Point(329, 236);
             criaruser.Name = "criaruser";
             criaruser.Size = new Size(355, 23);
             criaruser.TabIndex = 11;
@@ -116,7 +116,7 @@
             // criarsenha
             // 
             criarsenha.Anchor = AnchorStyles.Top;
-            criarsenha.Location = new Point(305, 399);
+            criarsenha.Location = new Point(329, 367);
             criarsenha.Name = "criarsenha";
             criarsenha.Size = new Size(355, 23);
             criarsenha.TabIndex = 12;

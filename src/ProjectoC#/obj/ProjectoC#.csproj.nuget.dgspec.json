@@ -47,7 +47,11 @@
           "dependencies": {
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.1, )"
+            },
+            "ReaLTaiizor": {
+              "target": "Package",
+              "version": "[3.8.0.5, )"
             }
           },
           "imports": [
