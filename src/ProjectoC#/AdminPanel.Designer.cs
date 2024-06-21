@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Button();
             button2 = new Button();
             panel2 = new Panel();
             button3 = new Button();
@@ -42,7 +41,6 @@
             button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -56,26 +54,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1043, 38);
             panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(74, 37);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(91, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(265, 25);
-            label1.TabIndex = 2;
-            label1.Text = "ADMIN PANEL | BEM VINDO";
             // 
             // nightControlBox1
             // 
@@ -91,7 +69,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(892, 3);
+            nightControlBox1.Location = new Point(901, 4);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -100,24 +78,34 @@
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 3;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(92, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(265, 25);
+            label1.TabIndex = 2;
+            label1.Text = "ADMIN PANEL | BEM VINDO";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(74, 37);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = Color.DimGray;
-            flowLayoutPanel1.Controls.Add(button1);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 38);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(213, 525);
             flowLayoutPanel1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(196, 59);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -204,11 +192,10 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminPanel";
-            Text = "AdminPanel";
+            Text = "\\";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -219,7 +206,6 @@
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Button button1;
         private Button button2;
         private Panel panel2;
         private Button button3;
