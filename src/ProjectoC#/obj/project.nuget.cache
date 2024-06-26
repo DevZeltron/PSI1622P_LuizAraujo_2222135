@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CyrUjeq6GBMOMpa+aPbfpryegazUiJ96AzqFtq5RCY0o7XLpd64Aj4YCVHJFjBxD+LypkLh6LCH09NXhQTmEmQ==",
+  "dgSpecHash": "S1dfBTW60YBsknuKs8YgoIE2jlqmrKX+il0Sx5e29d3OqYEZZ78kt9lQiPtUedRx/oFnZ2/AOs6kQCmI/UCt/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
+  "projectFilePath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2222135\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\2222135\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

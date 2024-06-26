@@ -29,22 +29,36 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            fcbtn = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(584, 33);
+            label1.Location = new Point(834, 55);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 25);
             label1.TabIndex = 0;
+            // 
+            // fcbtn
+            // 
+            fcbtn.Location = new Point(527, 661);
+            fcbtn.Name = "fcbtn";
+            fcbtn.Size = new Size(296, 93);
+            fcbtn.TabIndex = 1;
+            fcbtn.Text = "Checkout";
+            fcbtn.UseVisualStyleBackColor = true;
+            fcbtn.Click += fcbtn_Click;
             // 
             // pizzas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1009, 559);
+            ClientSize = new Size(1441, 932);
+            Controls.Add(fcbtn);
             Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "pizzas";
             Text = "pizzas";
             ResumeLayout(false);
@@ -54,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private Button fcbtn;
     }
 }

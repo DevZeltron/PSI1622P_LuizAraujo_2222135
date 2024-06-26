@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj": {}
+    "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj": {
+    "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
+        "projectUniqueName": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
         "projectName": "ProjectoC#",
-        "projectPath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
+        "projectPath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\ProjectoC#.csproj",
         "packagesPath": "C:\\Users\\2222135\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\jic\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\obj\\",
+        "outputPath": "C:\\Users\\2222135\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

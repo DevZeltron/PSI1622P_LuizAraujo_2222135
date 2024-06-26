@@ -21,5 +21,10 @@ namespace ProjectoC_
         {
 
         }
+
+        private void fcbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

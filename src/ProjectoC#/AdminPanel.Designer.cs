@@ -28,19 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             panel1 = new Panel();
             nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            button2 = new Button();
-            panel2 = new Panel();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            btnHam = new PictureBox();
+            sidebar = new FlowLayoutPanel();
+            menuContainer = new Panel();
+            menu = new Button();
+            submenu2 = new Button();
+            submenu1 = new Button();
+            editbtn = new Button();
+            adcbtn = new Button();
+            removebtn = new Button();
+            menuTransition = new System.Windows.Forms.Timer(components);
+            sidebarTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
+            sidebar.SuspendLayout();
+            menuContainer.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -48,11 +55,11 @@
             panel1.BackColor = Color.White;
             panel1.Controls.Add(nightControlBox1);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(btnHam);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1043, 38);
+            panel1.Size = new Size(1177, 35);
             panel1.TabIndex = 0;
             // 
             // nightControlBox1
@@ -69,7 +76,7 @@
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(901, 4);
+            nightControlBox1.Location = new Point(1035, 1);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -77,139 +84,210 @@
             nightControlBox1.Name = "nightControlBox1";
             nightControlBox1.Size = new Size(139, 31);
             nightControlBox1.TabIndex = 3;
+            nightControlBox1.Click += nightControlBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(92, 9);
+            label1.Location = new Point(80, 5);
             label1.Name = "label1";
             label1.Size = new Size(265, 25);
             label1.TabIndex = 2;
             label1.Text = "ADMIN PANEL | BEM VINDO";
             // 
-            // pictureBox1
+            // btnHam
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(74, 37);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            btnHam.Image = (Image)resources.GetObject("btnHam.Image");
+            btnHam.Location = new Point(0, 0);
+            btnHam.Name = "btnHam";
+            btnHam.Size = new Size(74, 37);
+            btnHam.SizeMode = PictureBoxSizeMode.Zoom;
+            btnHam.TabIndex = 1;
+            btnHam.TabStop = false;
+            btnHam.Click += btnHam_Click;
             // 
-            // flowLayoutPanel1
+            // sidebar
             // 
-            flowLayoutPanel1.BackColor = Color.DimGray;
-            flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 38);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(213, 525);
-            flowLayoutPanel1.TabIndex = 1;
+            sidebar.BackColor = Color.FromArgb(23, 24, 30);
+            sidebar.Controls.Add(menuContainer);
+            sidebar.Controls.Add(editbtn);
+            sidebar.Controls.Add(adcbtn);
+            sidebar.Controls.Add(removebtn);
+            sidebar.Dock = DockStyle.Left;
+            sidebar.FlowDirection = FlowDirection.TopDown;
+            sidebar.Location = new Point(0, 35);
+            sidebar.Name = "sidebar";
+            sidebar.Size = new Size(226, 555);
+            sidebar.TabIndex = 1;
+            sidebar.Paint += flowLayoutPanel1_Paint;
             // 
-            // button2
+            // menuContainer
             // 
-            button2.BackColor = Color.WhiteSmoke;
-            button2.BackgroundImageLayout = ImageLayout.Zoom;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(247, 138);
-            button2.Name = "button2";
-            button2.Padding = new Padding(28, 0, 0, 0);
-            button2.Size = new Size(211, 64);
-            button2.TabIndex = 2;
-            button2.Text = "                  Remover";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = false;
+            menuContainer.BackColor = Color.FromArgb(23, 24, 30);
+            menuContainer.Controls.Add(menu);
+            menuContainer.Controls.Add(submenu2);
+            menuContainer.Controls.Add(submenu1);
+            menuContainer.Location = new Point(3, 0);
+            menuContainer.Margin = new Padding(3, 0, 3, 3);
+            menuContainer.Name = "menuContainer";
+            menuContainer.Size = new Size(239, 41);
+            menuContainer.TabIndex = 3;
+            menuContainer.Paint += menuContainer_Paint;
             // 
-            // panel2
+            // menu
             // 
-            panel2.Location = new Point(743, 408);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(193, 87);
-            panel2.TabIndex = 3;
+            menu.BackColor = Color.FromArgb(23, 24, 30);
+            menu.BackgroundImageLayout = ImageLayout.None;
+            menu.FlatStyle = FlatStyle.Popup;
+            menu.ForeColor = Color.White;
+            menu.Image = (Image)resources.GetObject("menu.Image");
+            menu.ImageAlign = ContentAlignment.MiddleLeft;
+            menu.Location = new Point(0, -3);
+            menu.Name = "menu";
+            menu.Padding = new Padding(28, 0, 0, 0);
+            menu.Size = new Size(205, 48);
+            menu.TabIndex = 4;
+            menu.Text = "                  Menu";
+            menu.TextAlign = ContentAlignment.MiddleLeft;
+            menu.UseVisualStyleBackColor = false;
+            menu.Click += menu_Click_1;
             // 
-            // button3
+            // submenu2
             // 
-            button3.BackColor = Color.WhiteSmoke;
-            button3.BackgroundImageLayout = ImageLayout.Zoom;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(247, 226);
-            button3.Name = "button3";
-            button3.Padding = new Padding(28, 0, 0, 0);
-            button3.Size = new Size(211, 64);
-            button3.TabIndex = 4;
-            button3.Text = "                Adicionar";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
+            submenu2.BackColor = Color.FromArgb(23, 24, 30);
+            submenu2.BackgroundImageLayout = ImageLayout.Zoom;
+            submenu2.FlatStyle = FlatStyle.Popup;
+            submenu2.ForeColor = Color.White;
+            submenu2.Image = (Image)resources.GetObject("submenu2.Image");
+            submenu2.ImageAlign = ContentAlignment.MiddleLeft;
+            submenu2.Location = new Point(0, 91);
+            submenu2.Name = "submenu2";
+            submenu2.Padding = new Padding(28, 0, 0, 0);
+            submenu2.Size = new Size(204, 48);
+            submenu2.TabIndex = 5;
+            submenu2.Text = "             Política de Privacidade";
+            submenu2.TextAlign = ContentAlignment.MiddleLeft;
+            submenu2.UseVisualStyleBackColor = false;
+            submenu2.Click += submenu2_Click;
             // 
-            // button4
+            // submenu1
             // 
-            button4.BackColor = Color.WhiteSmoke;
-            button4.BackgroundImageLayout = ImageLayout.Zoom;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(247, 408);
-            button4.Name = "button4";
-            button4.Padding = new Padding(28, 0, 0, 0);
-            button4.Size = new Size(211, 64);
-            button4.TabIndex = 5;
-            button4.Text = "                   Editar";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = false;
+            submenu1.BackColor = Color.FromArgb(23, 24, 30);
+            submenu1.BackgroundImageLayout = ImageLayout.Zoom;
+            submenu1.FlatStyle = FlatStyle.Popup;
+            submenu1.ForeColor = Color.White;
+            submenu1.Image = (Image)resources.GetObject("submenu1.Image");
+            submenu1.ImageAlign = ContentAlignment.MiddleLeft;
+            submenu1.Location = new Point(0, 44);
+            submenu1.Name = "submenu1";
+            submenu1.Padding = new Padding(28, 0, 0, 0);
+            submenu1.Size = new Size(204, 41);
+            submenu1.TabIndex = 2;
+            submenu1.Text = "                 Sobre";
+            submenu1.TextAlign = ContentAlignment.MiddleLeft;
+            submenu1.UseVisualStyleBackColor = false;
+            submenu1.Click += submenu1_Click;
             // 
-            // button5
+            // editbtn
             // 
-            button5.BackColor = Color.WhiteSmoke;
-            button5.BackgroundImageLayout = ImageLayout.Zoom;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(247, 319);
-            button5.Name = "button5";
-            button5.Padding = new Padding(30, 20, 20, 20);
-            button5.Size = new Size(211, 64);
-            button5.TabIndex = 6;
-            button5.Text = "                    Dashboard";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = false;
+            editbtn.BackColor = Color.FromArgb(23, 24, 30);
+            editbtn.BackgroundImageLayout = ImageLayout.Zoom;
+            editbtn.FlatStyle = FlatStyle.Popup;
+            editbtn.ForeColor = Color.White;
+            editbtn.Image = (Image)resources.GetObject("editbtn.Image");
+            editbtn.ImageAlign = ContentAlignment.MiddleLeft;
+            editbtn.Location = new Point(3, 47);
+            editbtn.Name = "editbtn";
+            editbtn.Padding = new Padding(28, 0, 0, 0);
+            editbtn.Size = new Size(205, 45);
+            editbtn.TabIndex = 8;
+            editbtn.Text = "                  Editar";
+            editbtn.TextAlign = ContentAlignment.MiddleLeft;
+            editbtn.UseVisualStyleBackColor = false;
+            editbtn.Click += editar_Click;
+            // 
+            // adcbtn
+            // 
+            adcbtn.BackColor = Color.FromArgb(23, 24, 30);
+            adcbtn.BackgroundImageLayout = ImageLayout.Zoom;
+            adcbtn.FlatStyle = FlatStyle.Popup;
+            adcbtn.ForeColor = Color.White;
+            adcbtn.Image = (Image)resources.GetObject("adcbtn.Image");
+            adcbtn.ImageAlign = ContentAlignment.MiddleLeft;
+            adcbtn.Location = new Point(3, 98);
+            adcbtn.Name = "adcbtn";
+            adcbtn.Padding = new Padding(28, 0, 0, 0);
+            adcbtn.Size = new Size(205, 45);
+            adcbtn.TabIndex = 7;
+            adcbtn.Text = "                Adicionar";
+            adcbtn.TextAlign = ContentAlignment.MiddleLeft;
+            adcbtn.UseVisualStyleBackColor = false;
+            adcbtn.Click += adcbtn_Click;
+            // 
+            // removebtn
+            // 
+            removebtn.BackColor = Color.FromArgb(23, 24, 30);
+            removebtn.BackgroundImageLayout = ImageLayout.Zoom;
+            removebtn.FlatStyle = FlatStyle.Popup;
+            removebtn.ForeColor = Color.White;
+            removebtn.Image = (Image)resources.GetObject("removebtn.Image");
+            removebtn.ImageAlign = ContentAlignment.MiddleLeft;
+            removebtn.Location = new Point(3, 149);
+            removebtn.Name = "removebtn";
+            removebtn.Padding = new Padding(28, 0, 0, 0);
+            removebtn.Size = new Size(205, 45);
+            removebtn.TabIndex = 6;
+            removebtn.Text = "                Remover";
+            removebtn.TextAlign = ContentAlignment.MiddleLeft;
+            removebtn.UseVisualStyleBackColor = false;
+            removebtn.Click += removebtn_Click;
+            // 
+            // menuTransition
+            // 
+            menuTransition.Interval = 10;
+            menuTransition.Tick += menuTransition_Tick;
+            // 
+            // sidebarTransition
+            // 
+            sidebarTransition.Interval = 10;
+            sidebarTransition.Tick += sidebarTransition_Tick;
             // 
             // AdminPanel
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1043, 563);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(panel2);
-            Controls.Add(flowLayoutPanel1);
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = SystemColors.ButtonFace;
+            ClientSize = new Size(1177, 590);
+            Controls.Add(sidebar);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            IsMdiContainer = true;
             Name = "AdminPanel";
             Text = "\\";
+            Load += AdminPanel_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnHam).EndInit();
+            sidebar.ResumeLayout(false);
+            menuContainer.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox1;
+        private PictureBox btnHam;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Label label1;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Button button2;
-        private Panel panel2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private FlowLayoutPanel sidebar;
+        private Button submenu1;
+        private Panel menuContainer;
+        private Button menu;
+        private Button submenu2;
+        private System.Windows.Forms.Timer menuTransition;
+        private Button removebtn;
+        private Button adcbtn;
+        private Button editbtn;
+        private System.Windows.Forms.Timer sidebarTransition;
     }
 }

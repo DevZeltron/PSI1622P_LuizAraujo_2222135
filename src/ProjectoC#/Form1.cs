@@ -10,7 +10,7 @@ namespace ProjectoC_
         private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
         private SqlConnection connection = new SqlConnection(stringconexao);
 
-
+        
         public string NomeUtilizador { get; set; }
         public string Password { get; set; }
 
@@ -48,12 +48,12 @@ namespace ProjectoC_
 
         private bool VerifyLogin(string username, string password)
         {
-            
+
             string query = "SELECT COUNT(1) FROM loginn WHERE username = @NomeUtilizador AND password = @Password";
             if (username == "admin")
             {
-
-
+                AdminPanel admpanel =   new AdminPanel();
+                admpanel.Show();
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(stringconexao))
