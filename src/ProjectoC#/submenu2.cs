@@ -21,5 +21,10 @@ namespace ProjectoC_
         {
             this.ControlBox = false;
         }
+
+        private void bigLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

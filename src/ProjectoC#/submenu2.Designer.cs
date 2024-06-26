@@ -28,37 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(submenu2));
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // bigLabel1
+            // label1
             // 
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = Color.Transparent;
-            bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
-            bigLabel1.Location = new Point(339, 140);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(89, 46);
-            bigLabel1.TabIndex = 0;
-            bigLabel1.Text = "PRIV";
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(72, 235);
+            label1.Name = "label1";
+            label1.Size = new Size(680, 189);
+            label1.TabIndex = 3;
+            label1.Text = resources.GetString("label1.Text");
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(344, 109);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.BackColor = SystemColors.Control;
+            label2.Font = new Font("Verdana", 14.25F, FontStyle.Italic, GraphicsUnit.Point);
+            label2.ForeColor = Color.SaddleBrown;
+            label2.Location = new Point(72, 198);
+            label2.Name = "label2";
+            label2.Size = new Size(244, 23);
+            label2.TabIndex = 5;
+            label2.Text = "Política de Privacidade";
             // 
             // submenu2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(bigLabel1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "submenu2";
             Text = "submenu2";
             Load += submenu2_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Label label2;
     }
 }

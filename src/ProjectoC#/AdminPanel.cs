@@ -16,7 +16,7 @@ namespace ProjectoC_
     {
         editaradm editaradm;
         removeradm delete;
-        adcadm adcadm;
+        adcadm adicionar;
         menuhome menuadm;
         submenu1 sub1;
         submenu2 sub2;
@@ -75,7 +75,7 @@ namespace ProjectoC_
 
         private void menu_Click_1(object sender, EventArgs e)
         {
-            CloseAllForms();
+            
             menuTransition.Start();
 
             if (menuadm == null)
@@ -89,6 +89,7 @@ namespace ProjectoC_
             {
                 menuadm.Activate();
             }
+            CloseAllForms();
         }
 
         private void menuhome_FormClosed(object sender, FormClosedEventArgs e)
@@ -191,24 +192,24 @@ namespace ProjectoC_
         private void adcbtn_Click(object sender, EventArgs e)
         {
             CloseAllForms();
-            if (adcadm == null)
+            if (adicionar == null)
             {
-                adcadm = new adcadm();
-                adcadm.FormClosed += adicionar_FormClosed;
-                adcadm.MdiParent = this;
-                adcadm.Dock = DockStyle.Fill;
-                adcadm.Show();
+                adicionar = new adcadm();
+                adicionar.FormClosed += adicionar_FormClosed;
+                adicionar.MdiParent = this;
+                adicionar.Dock = DockStyle.Fill;
+                adicionar.Show();
             }
 
             else
             {
-                adcadm.Activate();
+                adicionar.Activate();
             }
         }
 
         private void adicionar_FormClosed(object sender, FormClosedEventArgs e)
         {
-            adcadm = null;
+            adicionar = null;
         }
 
         private void removebtn_Click(object sender, EventArgs e)
@@ -241,9 +242,9 @@ namespace ProjectoC_
             {
                 delete.Close();
             }
-            if (adcadm != null && !adcadm.IsDisposed)
+            if (adicionar != null && !adicionar.IsDisposed)
             {
-                adcadm.Close();
+                adicionar.Close();
             }
             if (editaradm != null && !editaradm.IsDisposed)
             {
@@ -253,6 +254,7 @@ namespace ProjectoC_
             {
                 menuadm.Close();
             }
+            
         }
 
         private void submenu2_Click(object sender, EventArgs e)
@@ -261,18 +263,18 @@ namespace ProjectoC_
             if (sub2 == null)
             {
                 sub2 = new submenu2();
-                sub2.FormClosed += Submenu1_FormClosed;
+                sub2.FormClosed += submenu2_FormClosed;
                 sub2.MdiParent = this;
                 sub2.Dock = DockStyle.Fill;
                 sub2.Show();
             }
             else
             {
-                sub1.Activate();
+                sub2.Activate();
             }
         }
 
-        private void submenu_FormClosed(object sender, FormClosedEventArgs e)
+        private void submenu2_FormClosed(object sender, FormClosedEventArgs e)
         {
             sub2 = null;
         }

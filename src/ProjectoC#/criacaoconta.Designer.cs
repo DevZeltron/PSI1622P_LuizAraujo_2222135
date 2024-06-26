@@ -147,6 +147,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "criacaoconta";
             Text = "Criar conta";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

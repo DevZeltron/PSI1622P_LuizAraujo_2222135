@@ -23,7 +23,7 @@ namespace ProjectoC_
         /* private void button1_Click(object sender, EventArgs e)
          {
 
-         }*/ //nothing haha ignorar kkkkk
+         }*/ //nothing haha ignorar 
 
         private void entrarbtn_Click(object sender, EventArgs e)
         {
