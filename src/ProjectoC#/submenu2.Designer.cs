@@ -38,7 +38,7 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(72, 235);
+            label1.Location = new Point(84, 236);
             label1.Name = "label1";
             label1.Size = new Size(680, 189);
             label1.TabIndex = 3;
@@ -47,9 +47,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 12);
+            pictureBox2.Location = new Point(84, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(344, 109);
+            pictureBox2.Size = new Size(349, 115);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -59,7 +59,7 @@
             label2.BackColor = SystemColors.Control;
             label2.Font = new Font("Verdana", 14.25F, FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.SaddleBrown;
-            label2.Location = new Point(72, 198);
+            label2.Location = new Point(84, 198);
             label2.Name = "label2";
             label2.Size = new Size(244, 23);
             label2.TabIndex = 5;

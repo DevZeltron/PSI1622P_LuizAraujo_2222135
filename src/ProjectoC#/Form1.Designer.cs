@@ -168,7 +168,6 @@
             Controls.Add(createacclink);
             Controls.Add(entrarbtn);
             Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

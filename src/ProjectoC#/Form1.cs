@@ -10,7 +10,7 @@ namespace ProjectoC_
         private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
         private SqlConnection connection = new SqlConnection(stringconexao);
 
-        
+
         public string NomeUtilizador { get; set; }
         public string Password { get; set; }
 
@@ -39,6 +39,8 @@ namespace ProjectoC_
             if (VerifyLogin(NomeUtilizador, Password))
             {
                 MessageBox.Show("Login bem-sucedido!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+
             }
             else
             {
@@ -48,11 +50,13 @@ namespace ProjectoC_
 
         private bool VerifyLogin(string username, string password)
         {
+            Form1 formL = new Form1();
 
             string query = "SELECT COUNT(1) FROM loginn WHERE username = @NomeUtilizador AND password = @Password";
-            if (username == "admin")
+            if (username == "admin" && password == "adminpass")
             {
-                AdminPanel admpanel =   new AdminPanel();
+                AdminPanel admpanel = new AdminPanel();
+
                 admpanel.Show();
                 try
                 {
@@ -74,10 +78,15 @@ namespace ProjectoC_
                     MessageBox.Show("Erro ao conectar ao banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
+
             }
             else
             {
+                
 
+                pizzas formpizzas = new pizzas();
+
+                formpizzas.Show();
                 try
                 {
                     using (SqlConnection connection = new SqlConnection(stringconexao))
@@ -100,6 +109,7 @@ namespace ProjectoC_
                     return false;
                 }
             }
+
         }
 
 
