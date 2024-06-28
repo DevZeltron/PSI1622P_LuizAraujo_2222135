@@ -29,72 +29,123 @@
         private void InitializeComponent()
         {
             dataGridPizzas = new DataGridView();
-            dataGridViewBeb = new DataGridView();
-            EditarPbtn = new Button();
-            button1 = new Button();
+            dataGridBebida = new DataGridView();
+            Editarbtn = new Button();
+            EditarBbtn = new Button();
+            bebida_id = new DataGridViewTextBoxColumn();
+            nomebev = new DataGridViewTextBoxColumn();
+            sabor_id = new DataGridViewTextBoxColumn();
+            bebida = new DataGridViewTextBoxColumn();
+            nomebebida = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridPizzas).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBeb).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBebida).BeginInit();
             SuspendLayout();
             // 
             // dataGridPizzas
             // 
             dataGridPizzas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridPizzas.Columns.AddRange(new DataGridViewColumn[] { sabor_id });
             dataGridPizzas.Location = new Point(26, 12);
             dataGridPizzas.Name = "dataGridPizzas";
             dataGridPizzas.RowTemplate.Height = 25;
-            dataGridPizzas.Size = new Size(379, 255);
+            dataGridPizzas.Size = new Size(550, 255);
             dataGridPizzas.TabIndex = 1;
             // 
-            // dataGridViewBeb
+            // dataGridBebida
             // 
-            dataGridViewBeb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBeb.Location = new Point(26, 397);
-            dataGridViewBeb.Name = "dataGridViewBeb";
-            dataGridViewBeb.RowTemplate.Height = 25;
-            dataGridViewBeb.Size = new Size(379, 255);
-            dataGridViewBeb.TabIndex = 2;
+            dataGridBebida.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridBebida.Columns.AddRange(new DataGridViewColumn[] { bebida, nomebebida, dataGridViewTextBoxColumn1 });
+            dataGridBebida.Location = new Point(26, 397);
+            dataGridBebida.Name = "dataGridBebida";
+            dataGridBebida.RowTemplate.Height = 25;
+            dataGridBebida.Size = new Size(550, 255);
+            dataGridBebida.TabIndex = 2;
             // 
-            // EditarPbtn
+            // Editarbtn
             // 
-            EditarPbtn.Location = new Point(447, 86);
-            EditarPbtn.Name = "EditarPbtn";
-            EditarPbtn.Size = new Size(202, 52);
-            EditarPbtn.TabIndex = 3;
-            EditarPbtn.Text = "Editar Pizza";
-            EditarPbtn.UseVisualStyleBackColor = true;
-            EditarPbtn.Click += EditarPbtn_Click;
+            Editarbtn.Location = new Point(618, 80);
+            Editarbtn.Name = "Editarbtn";
+            Editarbtn.Size = new Size(202, 52);
+            Editarbtn.TabIndex = 3;
+            Editarbtn.Text = "Editar Pizza";
+            Editarbtn.UseVisualStyleBackColor = true;
+            Editarbtn.Click += EditarPbtn_Click;
             // 
-            // button1
+            // EditarBbtn
             // 
-            button1.Location = new Point(447, 503);
-            button1.Name = "button1";
-            button1.Size = new Size(202, 52);
-            button1.TabIndex = 4;
-            button1.Text = "Editar Bebida";
-            button1.UseVisualStyleBackColor = true;
+            EditarBbtn.Location = new Point(618, 479);
+            EditarBbtn.Name = "EditarBbtn";
+            EditarBbtn.Size = new Size(202, 52);
+            EditarBbtn.TabIndex = 4;
+            EditarBbtn.Text = "Editar Bebida";
+            EditarBbtn.UseVisualStyleBackColor = true;
+            EditarBbtn.Click += button1_Click;
+            // 
+            // bebida_id
+            // 
+            bebida_id.DataPropertyName = "bebida_id";
+            bebida_id.HeaderText = "bebida_id";
+            bebida_id.Name = "bebida_id";
+            // 
+            // nomebev
+            // 
+            nomebev.DataPropertyName = "nomebev";
+            nomebev.HeaderText = "nomebev";
+            nomebev.Name = "nomebev";
+            // 
+            // sabor_id
+            // 
+            sabor_id.DataPropertyName = "sabor_id, name, preco";
+            sabor_id.HeaderText = "sabor_id";
+            sabor_id.Name = "sabor_id";
+            // 
+            // bebida
+            // 
+            bebida.DataPropertyName = "bebida_id, nome, preco";
+            bebida.HeaderText = "bebida_id";
+            bebida.Name = "bebida";
+            // 
+            // nomebebida
+            // 
+            nomebebida.DataPropertyName = "bebida_id";
+            nomebebida.HeaderText = "nome";
+            nomebebida.Name = "nomebebida";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "preco";
+            dataGridViewTextBoxColumn1.HeaderText = "preco";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // editaradm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1135, 701);
-            Controls.Add(button1);
-            Controls.Add(EditarPbtn);
-            Controls.Add(dataGridViewBeb);
+            Controls.Add(EditarBbtn);
+            Controls.Add(Editarbtn);
+            Controls.Add(dataGridBebida);
             Controls.Add(dataGridPizzas);
             FormBorderStyle = FormBorderStyle.None;
             Name = "editaradm";
             Text = "editaradm";
             Load += editaradm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridPizzas).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBeb).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBebida).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private DataGridView dataGridPizzas;
-        private DataGridView dataGridViewBeb;
-        private Button EditarPbtn;
-        private Button button1;
+        private DataGridView dataGridBebida;
+        private Button Editarbtn;
+        private Button EditarBbtn;
+        private DataGridViewTextBoxColumn bebida_id;
+        private DataGridViewTextBoxColumn nomebev;
+        private DataGridViewTextBoxColumn sabor_id;
+        private DataGridViewTextBoxColumn bebida;
+        private DataGridViewTextBoxColumn nomebebida;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

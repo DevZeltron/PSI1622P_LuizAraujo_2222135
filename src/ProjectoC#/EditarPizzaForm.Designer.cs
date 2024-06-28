@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarPizzaForm));
             label1 = new Label();
-            txtNome = new TextBox();
+            txtNomeP = new TextBox();
             label2 = new Label();
-            txtPreco = new TextBox();
-            button1 = new Button();
+            txtPrecoP = new TextBox();
+            salvarpizza = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -48,12 +48,12 @@
             label1.TabIndex = 0;
             label1.Text = "Editar nome:";
             // 
-            // txtNome
+            // txtNomeP
             // 
-            txtNome.Location = new Point(137, 141);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(217, 23);
-            txtNome.TabIndex = 1;
+            txtNomeP.Location = new Point(137, 141);
+            txtNomeP.Name = "txtNomeP";
+            txtNomeP.Size = new Size(217, 23);
+            txtNomeP.TabIndex = 1;
             // 
             // label2
             // 
@@ -65,23 +65,23 @@
             label2.TabIndex = 2;
             label2.Text = "Editar preço:";
             // 
-            // txtPreco
+            // txtPrecoP
             // 
-            txtPreco.Location = new Point(137, 215);
-            txtPreco.Name = "txtPreco";
-            txtPreco.Size = new Size(217, 23);
-            txtPreco.TabIndex = 3;
+            txtPrecoP.Location = new Point(137, 215);
+            txtPrecoP.Name = "txtPrecoP";
+            txtPrecoP.Size = new Size(217, 23);
+            txtPrecoP.TabIndex = 3;
             // 
-            // button1
+            // salvarpizza
             // 
-            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(207, 343);
-            button1.Name = "button1";
-            button1.Size = new Size(147, 41);
-            button1.TabIndex = 4;
-            button1.Text = "Salvar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            salvarpizza.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            salvarpizza.Location = new Point(207, 343);
+            salvarpizza.Name = "salvarpizza";
+            salvarpizza.Size = new Size(147, 41);
+            salvarpizza.TabIndex = 4;
+            salvarpizza.Text = "Salvar";
+            salvarpizza.UseVisualStyleBackColor = true;
+            salvarpizza.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -99,10 +99,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(568, 396);
             Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(txtPreco);
+            Controls.Add(salvarpizza);
+            Controls.Add(txtPrecoP);
             Controls.Add(label2);
-            Controls.Add(txtNome);
+            Controls.Add(txtNomeP);
             Controls.Add(label1);
             Name = "EditarPizzaForm";
             Text = "EditarPizzaForm";
@@ -115,10 +115,10 @@
         #endregion
 
         private Label label1;
-        private TextBox txtNome;
+        private TextBox txtNomeP;
         private Label label2;
-        private TextBox txtPreco;
-        private Button button1;
+        private TextBox txtPrecoP;
+        private Button salvarpizza;
         private PictureBox pictureBox1;
     }
 }

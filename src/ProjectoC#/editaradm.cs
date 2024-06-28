@@ -38,37 +38,58 @@ namespace ProjectoC_
         }
         private void CarregarDadosBebidas()
         {
-            string query = "SELECT bebida_id, nomebev, preco FROM Bebida";
+            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
+            string query = "SELECT bebida_id, nomebev AS Nome, preco FROM Bebida";
 
-            try
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                using (SqlConnection connection = new SqlConnection(stringconexao))
-                {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                        {
-                            DataTable dataTable = new DataTable();
-                            adapter.Fill(dataTable);
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
 
-                            // Vincule os dados ao controle DataGridView
-                            dataGridViewBeb.DataSource = dataTable;
-                        }
-                    }
-                }
+                dataGridBebida.DataSource = table;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao carregar os dados das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            /* try
+              {
+                  using (SqlConnection connection = new SqlConnection(stringconexao))
+                  {
+                      connection.Open();
+                      using (SqlCommand command = new SqlCommand(query, connection))
+                      {
+                          using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                          {
+                              DataTable dataTable = new DataTable();
+                              adapter.Fill(dataTable);
+
+                              // Vincule os dados ao controle DataGridView
+                              dataGridBebida.DataSource = dataTable;
+                          }
+                      }
+                  }
+              }
+              catch (Exception ex)
+              {
+                  MessageBox.Show("Erro ao carregar os dados das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              }*/
         }
 
         private void CarregarDadosPizzas()
         {
+            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
             string query = "SELECT sabor_id, nome, preco FROM sabor_pizzas";
 
-            try
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                dataGridPizzas.DataSource = table;
+            }
+
+            /*try
             {
                 using (SqlConnection connection = new SqlConnection(stringconexao))
                 {
@@ -92,7 +113,7 @@ namespace ProjectoC_
             }
 
             dataGridPizzas.DataSource = null; // Limpa o DataSource
-            dataGridPizzas.DataSource = ObterDadosPizzas(); // Método para obter os dados das pizzas do banco de dados
+            dataGridPizzas.DataSource = ObterDadosPizzas(); // Método para obter os dados das pizzas do banco de dados*/
         }
 
         private DataTable ObterDadosBebidas()
@@ -153,7 +174,7 @@ namespace ProjectoC_
         private void CarregarBebidasNoDataGridView()
         {
             DataTable dataTableB = ObterDadosBebidas();
-            dataGridPizzas.DataSource = dataTableB;
+            dataGridBebida.DataSource = dataTableB;
         }
 
         private void CarregarPizzaNoDataGridView()
@@ -162,16 +183,16 @@ namespace ProjectoC_
             dataGridPizzas.DataSource = dataTableB;
         }
 
-        private void EditarPbtn_Click(object sender, EventArgs e)
+        private void EditarPbtn_Click(object sender, EventArgs e) //Pizza
         {
             // Verifica se uma pizza foi selecionada para edição
             if (dataGridPizzas.SelectedRows.Count > 0)
             {
-                int pizzaId = Convert.ToInt32(dataGridPizzas.SelectedRows[0].Cells["Id"].Value);
+                int pizzaId = Convert.ToInt32(dataGridPizzas.SelectedRows[0].Cells["sabor_id"].Value);
 
                 // Abre o formulário de edição de pizza com o Id da pizza selecionada
                 EditarPizzaForm editarPizzaForm = new EditarPizzaForm(pizzaId);
-                editarPizzaForm.ShowDialog();   
+                editarPizzaForm.ShowDialog();
 
                 // Atualiza o DataGridView de pizzas após a edição
                 CarregarDadosPizzas();
@@ -179,6 +200,26 @@ namespace ProjectoC_
             else
             {
                 MessageBox.Show("Selecione uma pizza para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e) //Bebida
+        {
+            // Verifica se uma bebida foi selecionada para edição
+            if (dataGridBebida.SelectedRows.Count > 0)
+            {
+                int bebida_id = Convert.ToInt32(dataGridBebida.SelectedRows[0].Cells["bebida_id"].Value);
+
+                // Abre o formulário de edição de bebida com o Id da bebida selecionada
+                EditarBebidaForm editarBebidaForm = new EditarBebidaForm(bebida_id);
+                editarBebidaForm.ShowDialog();
+
+                // Atualiza o DataGridView de bebidas após a edição
+                CarregarDadosBebidas();
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma bebida para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
