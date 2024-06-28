@@ -32,13 +32,16 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
+            finalizarcompra = new Button();
+            cardrdnbtn = new RadioButton();
+            moneyrdnbtn = new RadioButton();
             label4 = new Label();
             itenslbl = new Label();
             totalp = new Label();
+            pictureBox2 = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -54,7 +57,7 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(321, 9);
+            label1.Location = new Point(306, 9);
             label1.Name = "label1";
             label1.Size = new Size(269, 23);
             label1.TabIndex = 3;
@@ -69,48 +72,49 @@
             label2.TabIndex = 4;
             label2.Text = "Por favor, escolha o método de pagamento!";
             // 
-            // button1
+            // finalizarcompra
             // 
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.Location = new Point(360, 440);
-            button1.Name = "button1";
-            button1.Size = new Size(191, 44);
-            button1.TabIndex = 5;
-            button1.Text = "Finalizar compra";
-            button1.UseVisualStyleBackColor = true;
+            finalizarcompra.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            finalizarcompra.Location = new Point(342, 440);
+            finalizarcompra.Name = "finalizarcompra";
+            finalizarcompra.Size = new Size(191, 44);
+            finalizarcompra.TabIndex = 5;
+            finalizarcompra.Text = "Finalizar compra";
+            finalizarcompra.UseVisualStyleBackColor = true;
+            finalizarcompra.Click += button1_Click;
             // 
-            // radioButton1
+            // cardrdnbtn
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Segoe UI", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
-            radioButton1.Location = new Point(23, 309);
-            radioButton1.Name = "radioButton1";
-            radioButton1.RightToLeft = RightToLeft.Yes;
-            radioButton1.Size = new Size(141, 24);
-            radioButton1.TabIndex = 6;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Cartão de Credito";
-            radioButton1.UseVisualStyleBackColor = true;
+            cardrdnbtn.AutoSize = true;
+            cardrdnbtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
+            cardrdnbtn.Location = new Point(23, 309);
+            cardrdnbtn.Name = "cardrdnbtn";
+            cardrdnbtn.RightToLeft = RightToLeft.Yes;
+            cardrdnbtn.Size = new Size(141, 24);
+            cardrdnbtn.TabIndex = 6;
+            cardrdnbtn.TabStop = true;
+            cardrdnbtn.Text = "Cartão de Credito";
+            cardrdnbtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // moneyrdnbtn
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
-            radioButton2.Location = new Point(23, 352);
-            radioButton2.Name = "radioButton2";
-            radioButton2.RightToLeft = RightToLeft.Yes;
-            radioButton2.Size = new Size(82, 24);
-            radioButton2.TabIndex = 7;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Dinheiro";
-            radioButton2.UseVisualStyleBackColor = true;
+            moneyrdnbtn.AutoSize = true;
+            moneyrdnbtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
+            moneyrdnbtn.Location = new Point(23, 352);
+            moneyrdnbtn.Name = "moneyrdnbtn";
+            moneyrdnbtn.RightToLeft = RightToLeft.Yes;
+            moneyrdnbtn.Size = new Size(82, 24);
+            moneyrdnbtn.TabIndex = 7;
+            moneyrdnbtn.TabStop = true;
+            moneyrdnbtn.Text = "Dinheiro";
+            moneyrdnbtn.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(23, 161);
+            label4.Font = new Font("Verdana", 11.25F, FontStyle.Italic, GraphicsUnit.Point);
+            label4.Location = new Point(12, 161);
             label4.Name = "label4";
-            label4.Size = new Size(120, 23);
+            label4.Size = new Size(121, 23);
             label4.TabIndex = 9;
             label4.Text = "Total a pagar:";
             // 
@@ -124,22 +128,44 @@
             // totalp
             // 
             totalp.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            totalp.Location = new Point(117, 146);
+            totalp.Location = new Point(126, 161);
             totalp.Name = "totalp";
-            totalp.Size = new Size(197, 40);
+            totalp.Size = new Size(232, 40);
             totalp.TabIndex = 11;
+            totalp.Click += totalp_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(583, 123);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(305, 274);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(306, 55);
+            label3.Name = "label3";
+            label3.Size = new Size(269, 23);
+            label3.TabIndex = 13;
+            label3.Text = "     Obrigado pela sua preferência!";
             // 
             // pagamento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(909, 496);
+            Controls.Add(label3);
+            Controls.Add(pictureBox2);
             Controls.Add(totalp);
             Controls.Add(itenslbl);
             Controls.Add(label4);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(button1);
+            Controls.Add(moneyrdnbtn);
+            Controls.Add(cardrdnbtn);
+            Controls.Add(finalizarcompra);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -147,6 +173,7 @@
             Text = "pagamento";
             Load += pagamento_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,11 +183,13 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private Button button1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private Button finalizarcompra;
+        private RadioButton cardrdnbtn;
+        private RadioButton moneyrdnbtn;
         private Label label4;
         private Label itenslbl;
         private Label totalp;
+        private PictureBox pictureBox2;
+        private Label label3;
     }
 }

@@ -28,37 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            dataGridPizzas = new DataGridView();
+            dataGridViewBeb = new DataGridView();
+            EditarPbtn = new Button();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridPizzas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBeb).BeginInit();
             SuspendLayout();
             // 
-            // bigLabel1
+            // dataGridPizzas
             // 
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = Color.Transparent;
-            bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
-            bigLabel1.Location = new Point(322, 146);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(128, 46);
-            bigLabel1.TabIndex = 0;
-            bigLabel1.Text = "EDITAR";
+            dataGridPizzas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridPizzas.Location = new Point(26, 12);
+            dataGridPizzas.Name = "dataGridPizzas";
+            dataGridPizzas.RowTemplate.Height = 25;
+            dataGridPizzas.Size = new Size(379, 255);
+            dataGridPizzas.TabIndex = 1;
+            // 
+            // dataGridViewBeb
+            // 
+            dataGridViewBeb.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewBeb.Location = new Point(26, 397);
+            dataGridViewBeb.Name = "dataGridViewBeb";
+            dataGridViewBeb.RowTemplate.Height = 25;
+            dataGridViewBeb.Size = new Size(379, 255);
+            dataGridViewBeb.TabIndex = 2;
+            // 
+            // EditarPbtn
+            // 
+            EditarPbtn.Location = new Point(447, 86);
+            EditarPbtn.Name = "EditarPbtn";
+            EditarPbtn.Size = new Size(202, 52);
+            EditarPbtn.TabIndex = 3;
+            EditarPbtn.Text = "Editar Pizza";
+            EditarPbtn.UseVisualStyleBackColor = true;
+            EditarPbtn.Click += EditarPbtn_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(447, 503);
+            button1.Name = "button1";
+            button1.Size = new Size(202, 52);
+            button1.TabIndex = 4;
+            button1.Text = "Editar Bebida";
+            button1.UseVisualStyleBackColor = true;
             // 
             // editaradm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(bigLabel1);
+            ClientSize = new Size(1135, 701);
+            Controls.Add(button1);
+            Controls.Add(EditarPbtn);
+            Controls.Add(dataGridViewBeb);
+            Controls.Add(dataGridPizzas);
             FormBorderStyle = FormBorderStyle.None;
             Name = "editaradm";
             Text = "editaradm";
             Load += editaradm_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridPizzas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBeb).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private DataGridView dataGridPizzas;
+        private DataGridView dataGridViewBeb;
+        private Button EditarPbtn;
+        private Button button1;
     }
 }

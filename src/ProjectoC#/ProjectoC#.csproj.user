@@ -16,6 +16,12 @@
     <Compile Update="editaradm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EditarBebidaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditarPizzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

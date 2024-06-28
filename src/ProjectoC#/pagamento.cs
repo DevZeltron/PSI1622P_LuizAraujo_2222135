@@ -18,14 +18,13 @@ namespace ProjectoC_
         }
 
         private List<decimal> precosPizzas;
-        private List<decimal> precosBebidas; // Deveria ser inicializada e passada como argumento
+        private List<decimal> precosBebidas;
 
         public pagamento(List<decimal> precosPizzas, List<decimal> precosBebidas)
         {
             InitializeComponent();
             this.precosPizzas = precosPizzas;
-            this.precosBebidas = precosBebidas; // Recebe a lista de preços das bebidas
-
+            this.precosBebidas = precosBebidas;
             CalcularTotal();
         }
 
@@ -33,22 +32,16 @@ namespace ProjectoC_
         {
             decimal totalFinal = 0;
 
-            // Somar os preços das pizzas selecionadas
             foreach (decimal precoPizza in precosPizzas)
             {
                 totalFinal += precoPizza;
             }
 
-            // Somar os preços das bebidas selecionadas (se houver)
-            if (precosBebidas != null)
+            foreach (decimal precoBebida in precosBebidas)
             {
-                foreach (decimal precoBebida in precosBebidas)
-                {
-                    totalFinal += precoBebida;
-                }
+                totalFinal += precoBebida;
             }
 
-            // Exibir o total final no label
             totalp.Text = $"€ {totalFinal:F2}";
         }
 
@@ -56,5 +49,26 @@ namespace ProjectoC_
         {
 
         }
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cardrdnbtn.Checked)
+            {
+
+            }
+            else if (moneyrdnbtn.Checked)
+            {
+
+            }
+
+
+         }
+
+            private void totalp_Click(object sender, EventArgs e)
+            {
+
+            }
+     }
+
 }
+  

@@ -27,13 +27,36 @@ namespace ProjectoC_
             LoadSumol();
         }
 
+        public List<decimal> ObterPrecosBebidasSelecionadas()
+        {
+            List<decimal> precosBebidasSelecionadas = new List<decimal>();
+            AdicionarPrecoSeSelecionadoBebidas(pepsicheck, precosBebidasSelecionadas);
+            AdicionarPrecoSeSelecionadoBebidas(fantacheck, precosBebidasSelecionadas);
+            AdicionarPrecoSeSelecionadoBebidas(cocazerocheck, precosBebidasSelecionadas);
+            AdicionarPrecoSeSelecionadoBebidas(Upcheck, precosBebidasSelecionadas);
+            AdicionarPrecoSeSelecionadoBebidas(guaranacheck, precosBebidasSelecionadas);
+            AdicionarPrecoSeSelecionadoBebidas(sumolcheck, precosBebidasSelecionadas);
+            return precosBebidasSelecionadas;
+        }
+
+
+        private void AdicionarPrecoSeSelecionadoBebidas(CheckBox checkbox, List<decimal> listaDePrecos)
+        {
+            if (checkbox.Checked && checkbox.Tag != null)
+            {
+                listaDePrecos.Add((decimal)checkbox.Tag);
+            }
+        }
+
+
         private void pepslbl_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void LoadPepso()
-        {
+       
+            private void LoadPepso()
+            {
             string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 1";
 
             try
@@ -46,16 +69,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                pepslbl.Text = $"{nome}: € {preco:F2}";
+                                pepsicheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             pepslbl.Text = sb.ToString();
                         }
                     }
@@ -81,16 +102,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                fantalbl.Text = $"{nome}: € {preco:F2}";
+                                fantacheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             fantalbl.Text = sb.ToString();
                         }
                     }
@@ -116,16 +135,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                cocazerolbl.Text = $"{nome}: € {preco:F2}";
+                                cocazerocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             cocazerolbl.Text = sb.ToString();
                         }
                     }
@@ -151,16 +168,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                lblUp.Text = $"{nome}: € {preco:F2}";
+                                Upcheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             lblUp.Text = sb.ToString();
                         }
                     }
@@ -186,16 +201,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                guaranalbl.Text = $"{nome}: € {preco:F2}";
+                                guaranacheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             guaranalbl.Text = sb.ToString();
                         }
                     }
@@ -221,16 +234,14 @@ namespace ProjectoC_
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                sumolbl.Text = $"{nome}: € {preco:F2}";
+                                sumolcheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
                             sumolbl.Text = sb.ToString();
                         }
                     }
@@ -243,6 +254,10 @@ namespace ProjectoC_
 
         }
 
+       
+
+       
+
         private void fantalbl_Click(object sender, EventArgs e)
         {
 
@@ -250,8 +265,7 @@ namespace ProjectoC_
 
         private void voltarbtn_Click(object sender, EventArgs e)
         {
-            pizzas SPizza = new pizzas();
-           SPizza.Show();
+            
             this.Close();
         }
 

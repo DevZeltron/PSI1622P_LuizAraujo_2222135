@@ -35,11 +35,8 @@ namespace ProjectoC_
 
         private void fcbtn_Click(object sender, EventArgs e)
         {
-            // Criar uma lista para armazenar os preços das pizzas selecionadas
             List<decimal> precosPizzasSelecionadas = new List<decimal>();
-            List<decimal> precosBebidas = new List<decimal>();
 
-            // Adicionar os preços das pizzas selecionadas à lista
             AdicionarPrecoSeSelecionado(margeritocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(pepperonocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(queijocheck, precosPizzasSelecionadas);
@@ -47,17 +44,23 @@ namespace ProjectoC_
             AdicionarPrecoSeSelecionado(calabresocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(catupirocheck, precosPizzasSelecionadas);
 
-            // Instanciar o formulário de pagamento passando os preços das pizzas
-            pagamento pay = new pagamento(precosPizzasSelecionadas, precosBebidas); 
+            // Abre o formulário de bebidas e espera até que ele seja fechado
+            bebidas bevForm = new bebidas();
+            
 
+            // Obtém os preços das bebidas selecionadas
+            List<decimal> precosBebidasSelecionadas = bevForm.ObterPrecosBebidasSelecionadas();
+
+            pagamento pay = new pagamento(precosPizzasSelecionadas, precosBebidasSelecionadas);
             pay.Show();
             this.Hide();
         }
-        private void AdicionarPrecoSeSelecionado(CheckBox checkBox, List<decimal> listaPrecos)
+
+        private void AdicionarPrecoSeSelecionado(CheckBox checkbox, List<decimal> listaDePrecos)
         {
-            if (checkBox.Checked && checkBox.Tag is decimal)
+            if (checkbox.Checked && checkbox.Tag != null)
             {
-                listaPrecos.Add((decimal)checkBox.Tag);
+                listaDePrecos.Add((decimal)checkbox.Tag);
             }
         }
 
@@ -68,7 +71,6 @@ namespace ProjectoC_
 
         private void CarregarPrecoMargherita()
         {
-
             string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 1";
 
             try
@@ -80,17 +82,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                margerito.Text = $"{nome}: € {preco:F2}";
+                                margeritocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-                            // Atualiza a label com os preços das pizzas
-                            margerito.Text = sb.ToString();
                         }
                     }
                 }
@@ -99,10 +97,7 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
-
 
         private void CarregarPrecoPepperoni()
         {
@@ -117,17 +112,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                pepperono.Text = $"{nome}: € {preco:F2}";
+                                pepperonocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-                            // Atualiza a label com os preços das pizzas
-                            pepperono.Text = sb.ToString();
                         }
                     }
                 }
@@ -136,10 +127,8 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
+
         private void CarregarPrecoQQueijo()
         {
             string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 3";
@@ -153,17 +142,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                queijudo.Text = $"{nome}: € {preco:F2}";
+                                queijocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-                            // Atualiza a label com os preços das pizzas
-                            queijudo.Text = sb.ToString();
                         }
                     }
                 }
@@ -172,10 +157,8 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
+
         private void CarregarPrecoPortuguesa()
         {
             string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 6";
@@ -189,17 +172,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                portugueso.Text = $"{nome}: € {preco:F2}";
+                                tugacheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-                            // Atualiza a label com os preços das pizzas
-                            portugueso.Text = sb.ToString();
                         }
                     }
                 }
@@ -208,10 +187,8 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
+
         private void CarregarCalabreso()
         {
             string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 5";
@@ -225,17 +202,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                calabreso.Text = $"{nome}: € {preco:F2}";
+                                calabresocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-                            // Atualiza a label com os preços das pizzas
-                            calabreso.Text = sb.ToString();
                         }
                     }
                 }
@@ -244,10 +217,8 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
+
         private void CarregarCatupiro()
         {
             string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 4";
@@ -261,18 +232,13 @@ namespace ProjectoC_
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            StringBuilder sb = new StringBuilder();
-                            while (reader.Read())
+                            if (reader.Read())
                             {
                                 string nome = reader["nome"].ToString();
                                 decimal preco = (decimal)reader["preco"];
-                                sb.AppendLine($"{nome}: € {preco:F2}");
-
+                                catupiro.Text = $"{nome}: € {preco:F2}";
+                                catupirocheck.Tag = preco;  // Armazena o preço na propriedade Tag
                             }
-
-
-                            // Atualiza a label com os preços das pizzas
-                            catupiro.Text = sb.ToString();
                         }
                     }
                 }
@@ -281,10 +247,8 @@ namespace ProjectoC_
             {
                 MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
+
 
         private void pizzas_Load(object sender, EventArgs e)
         {
