@@ -7,6 +7,9 @@
     <Compile Update="AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="bebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="criacaoconta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menuhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="pagamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="pizzas.cs">

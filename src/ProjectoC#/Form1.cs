@@ -39,13 +39,14 @@ namespace ProjectoC_
             if (VerifyLogin(NomeUtilizador, Password))
             {
                 MessageBox.Show("Login bem-sucedido!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
 
+                
             }
             else
             {
                 MessageBox.Show("Nome de utilizador ou palavra-passe incorretos. Por favor, tente novamente ou crie uma conta.", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            this.Hide();
         }
 
         private bool VerifyLogin(string username, string password)

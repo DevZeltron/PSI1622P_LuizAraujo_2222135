@@ -363,3 +363,5 @@ C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\sr
 C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC#.pdb
 C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC#.genruntimeconfig.cache
 C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ref\ProjectoC#.dll
+C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC_.bebidas.resources
+C:\Users\USER\OneDrive - Escola Digital\! PSI\sla\PSI1622P_LuizAraujo_2222135\src\ProjectoC#\obj\Debug\net6.0-windows\ProjectoC_.pagamento.resources

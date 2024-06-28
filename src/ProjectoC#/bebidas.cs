@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,64 +11,30 @@ using System.Windows.Forms;
 
 namespace ProjectoC_
 {
-    public partial class pizzas : Form
+    public partial class bebidas : Form
     {
         private static string stringconexao = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
         private SqlConnection connection = new SqlConnection(stringconexao);
 
-        public pizzas()
+        public bebidas()
         {
             InitializeComponent();
-            CarregarPrecoMargherita();
-            CarregarPrecoPepperoni();
-            CarregarPrecoQQueijo();
-            CarregarPrecoPortuguesa();
-            CarregarCalabreso();
-            CarregarCatupiro();
+            LoadPepso();
+            LoadFanto();
+            LoadCocaZero();
+            Load7Upo();
+            LoadGuarana();
+            LoadSumol();
         }
 
-        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        private void pepslbl_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void fcbtn_Click(object sender, EventArgs e)
+        private void LoadPepso()
         {
-            // Criar uma lista para armazenar os preços das pizzas selecionadas
-            List<decimal> precosPizzasSelecionadas = new List<decimal>();
-            List<decimal> precosBebidas = new List<decimal>();
-
-            // Adicionar os preços das pizzas selecionadas à lista
-            AdicionarPrecoSeSelecionado(margeritocheck, precosPizzasSelecionadas);
-            AdicionarPrecoSeSelecionado(pepperonocheck, precosPizzasSelecionadas);
-            AdicionarPrecoSeSelecionado(queijocheck, precosPizzasSelecionadas);
-            AdicionarPrecoSeSelecionado(tugacheck, precosPizzasSelecionadas);
-            AdicionarPrecoSeSelecionado(calabresocheck, precosPizzasSelecionadas);
-            AdicionarPrecoSeSelecionado(catupirocheck, precosPizzasSelecionadas);
-
-            // Instanciar o formulário de pagamento passando os preços das pizzas
-            pagamento pay = new pagamento(precosPizzasSelecionadas, precosBebidas); 
-
-            pay.Show();
-            this.Hide();
-        }
-        private void AdicionarPrecoSeSelecionado(CheckBox checkBox, List<decimal> listaPrecos)
-        {
-            if (checkBox.Checked && checkBox.Tag is decimal)
-            {
-                listaPrecos.Add((decimal)checkBox.Tag);
-            }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CarregarPrecoMargherita()
-        {
-
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 1";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 1";
 
             try
             {
@@ -83,30 +48,28 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
                             }
 
+
                             // Atualiza a label com os preços das pizzas
-                            margerito.Text = sb.ToString();
+                            pepslbl.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
         }
-
-
-        private void CarregarPrecoPepperoni()
+        private void LoadFanto()
         {
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 2";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 2";
 
             try
             {
@@ -120,29 +83,28 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
                             }
 
+
                             // Atualiza a label com os preços das pizzas
-                            pepperono.Text = sb.ToString();
+                            fantalbl.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-
         }
-        private void CarregarPrecoQQueijo()
+        private void LoadCocaZero()
         {
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 3";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 3";
 
             try
             {
@@ -156,29 +118,28 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
                             }
 
+
                             // Atualiza a label com os preços das pizzas
-                            queijudo.Text = sb.ToString();
+                            cocazerolbl.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-
         }
-        private void CarregarPrecoPortuguesa()
+        private void Load7Upo()
         {
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 6";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 4";
 
             try
             {
@@ -192,29 +153,28 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
                             }
 
+
                             // Atualiza a label com os preços das pizzas
-                            portugueso.Text = sb.ToString();
+                            lblUp.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-
         }
-        private void CarregarCalabreso()
+        private void LoadGuarana()
         {
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 5";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 5";
 
             try
             {
@@ -228,29 +188,28 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
                             }
 
+
                             // Atualiza a label com os preços das pizzas
-                            calabreso.Text = sb.ToString();
+                            guaranalbl.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-
         }
-        private void CarregarCatupiro()
+        private void LoadSumol()
         {
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = 4";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = 6";
 
             try
             {
@@ -264,7 +223,7 @@ namespace ProjectoC_
                             StringBuilder sb = new StringBuilder();
                             while (reader.Read())
                             {
-                                string nome = reader["nome"].ToString();
+                                string nome = reader["nomebev"].ToString();
                                 decimal preco = (decimal)reader["preco"];
                                 sb.AppendLine($"{nome}: € {preco:F2}");
 
@@ -272,41 +231,63 @@ namespace ProjectoC_
 
 
                             // Atualiza a label com os preços das pizzas
-                            catupiro.Text = sb.ToString();
+                            sumolbl.Text = sb.ToString();
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os preços das pizzas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os preços das bebidas: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-
         }
 
-        private void pizzas_Load(object sender, EventArgs e)
+        private void fantalbl_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void voltarbtn_Click(object sender, EventArgs e)
+        {
+            pizzas SPizza = new pizzas();
+           SPizza.Show();
+            this.Close();
+        }
+
+        private void pepsicheck_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void margeritocheck_CheckedChanged(object sender, EventArgs e)
+        private void fantacheck_CheckedChanged(object sender, EventArgs e)
         {
-
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cocazerocheck_CheckedChanged(object sender, EventArgs e)
         {
-            bebidas bev =  new bebidas();
 
-            bev.Show();
+        }
+
+        private void Upcheck_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guaranacheck_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bebidas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sumolcheck_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

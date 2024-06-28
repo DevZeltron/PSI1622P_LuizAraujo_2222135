@@ -32,20 +32,36 @@
             label1 = new Label();
             fcbtn = new Button();
             pictureBox1 = new PictureBox();
-            label3 = new Label();
+            margerito = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            label4 = new Label();
+            pepperono = new Label();
             label5 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
+            margeritocheck = new CheckBox();
+            pepperonocheck = new CheckBox();
             pictureBox3 = new PictureBox();
-            label6 = new Label();
+            queijudo = new Label();
             label7 = new Label();
-            checkBox3 = new CheckBox();
+            queijocheck = new CheckBox();
+            pictureBox4 = new PictureBox();
+            label8 = new Label();
+            tugacheck = new CheckBox();
+            portugueso = new Label();
+            pictureBox5 = new PictureBox();
+            calabreso = new Label();
+            label11 = new Label();
+            calabresocheck = new CheckBox();
+            pictureBox6 = new PictureBox();
+            label3 = new Label();
+            catupirocheck = new CheckBox();
+            catupiro = new Label();
+            bebidabtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +74,8 @@
             // 
             // fcbtn
             // 
-            fcbtn.Location = new Point(571, 563);
+            fcbtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            fcbtn.Location = new Point(710, 563);
             fcbtn.Margin = new Padding(2);
             fcbtn.Name = "fcbtn";
             fcbtn.Size = new Size(207, 56);
@@ -78,14 +95,14 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // label3
+            // margerito
             // 
-            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(242, 33);
-            label3.Name = "label3";
-            label3.Size = new Size(203, 24);
-            label3.TabIndex = 4;
-            label3.Click += label3_Click;
+            margerito.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            margerito.Location = new Point(242, 23);
+            margerito.Name = "margerito";
+            margerito.Size = new Size(191, 24);
+            margerito.TabIndex = 4;
+            margerito.Click += label3_Click;
             // 
             // label2
             // 
@@ -100,48 +117,49 @@
             // 
             pictureBox2.BackColor = SystemColors.Control;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(429, 12);
+            pictureBox2.Location = new Point(439, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(215, 159);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
-            // label4
+            // pepperono
             // 
-            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(650, 33);
-            label4.Name = "label4";
-            label4.Size = new Size(183, 25);
-            label4.TabIndex = 8;
-            label4.Click += label4_Click;
+            pepperono.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            pepperono.Location = new Point(663, 23);
+            pepperono.Name = "pepperono";
+            pepperono.Size = new Size(183, 25);
+            pepperono.TabIndex = 8;
+            pepperono.Click += label4_Click;
             // 
             // label5
             // 
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(650, 73);
+            label5.Location = new Point(663, 73);
             label5.Name = "label5";
             label5.Size = new Size(170, 58);
             label5.TabIndex = 9;
             label5.Text = "Adorada por todos que comem.";
             // 
-            // checkBox1
+            // margeritocheck
             // 
-            checkBox1.Location = new Point(242, 134);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(155, 24);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = "Adicionar / Remover";
-            checkBox1.UseVisualStyleBackColor = true;
+            margeritocheck.Location = new Point(242, 134);
+            margeritocheck.Name = "margeritocheck";
+            margeritocheck.Size = new Size(155, 24);
+            margeritocheck.TabIndex = 11;
+            margeritocheck.Text = "Adicionar / Remover";
+            margeritocheck.UseVisualStyleBackColor = true;
+            margeritocheck.CheckedChanged += margeritocheck_CheckedChanged;
             // 
-            // checkBox2
+            // pepperonocheck
             // 
-            checkBox2.Location = new Point(650, 134);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(155, 24);
-            checkBox2.TabIndex = 12;
-            checkBox2.Text = "Adicionar / Remover";
-            checkBox2.UseVisualStyleBackColor = true;
+            pepperonocheck.Location = new Point(663, 134);
+            pepperonocheck.Name = "pepperonocheck";
+            pepperonocheck.Size = new Size(155, 24);
+            pepperonocheck.TabIndex = 12;
+            pepperonocheck.Text = "Adicionar / Remover";
+            pepperonocheck.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -154,56 +172,195 @@
             pictureBox3.TabIndex = 13;
             pictureBox3.TabStop = false;
             // 
-            // label6
+            // queijudo
             // 
-            label6.Location = new Point(1082, 37);
-            label6.Name = "label6";
-            label6.Size = new Size(161, 21);
-            label6.TabIndex = 14;
+            queijudo.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            queijudo.Location = new Point(1082, 23);
+            queijudo.Name = "queijudo";
+            queijudo.Size = new Size(189, 21);
+            queijudo.TabIndex = 14;
             // 
             // label7
             // 
             label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(1082, 73);
             label7.Name = "label7";
-            label7.Size = new Size(170, 58);
+            label7.Size = new Size(189, 58);
             label7.TabIndex = 15;
-            label7.Text = "Adorada por todos que comem.";
+            label7.Text = "Não recomendado para intolerantes a lactose.";
             // 
-            // checkBox3
+            // queijocheck
             // 
-            checkBox3.Location = new Point(1082, 134);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(155, 24);
-            checkBox3.TabIndex = 16;
-            checkBox3.Text = "Adicionar / Remover";
-            checkBox3.UseVisualStyleBackColor = true;
+            queijocheck.Location = new Point(1082, 134);
+            queijocheck.Name = "queijocheck";
+            queijocheck.Size = new Size(155, 24);
+            queijocheck.TabIndex = 16;
+            queijocheck.Text = "Adicionar / Remover";
+            queijocheck.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = SystemColors.Control;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(12, 249);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(224, 159);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 17;
+            pictureBox4.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(242, 295);
+            label8.Name = "label8";
+            label8.Size = new Size(170, 58);
+            label8.TabIndex = 18;
+            label8.Text = "Gostinho brasileiro não tem igual.";
+            // 
+            // tugacheck
+            // 
+            tugacheck.Location = new Point(242, 356);
+            tugacheck.Name = "tugacheck";
+            tugacheck.Size = new Size(155, 24);
+            tugacheck.TabIndex = 19;
+            tugacheck.Text = "Adicionar / Remover";
+            tugacheck.UseVisualStyleBackColor = true;
+            // 
+            // portugueso
+            // 
+            portugueso.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            portugueso.Location = new Point(242, 249);
+            portugueso.Name = "portugueso";
+            portugueso.Size = new Size(170, 28);
+            portugueso.TabIndex = 20;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = SystemColors.Control;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(439, 249);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(215, 159);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 21;
+            pictureBox5.TabStop = false;
+            // 
+            // calabreso
+            // 
+            calabreso.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            calabreso.Location = new Point(663, 249);
+            calabreso.Name = "calabreso";
+            calabreso.Size = new Size(183, 28);
+            calabreso.TabIndex = 22;
+            // 
+            // label11
+            // 
+            label11.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(663, 295);
+            label11.Name = "label11";
+            label11.Size = new Size(170, 58);
+            label11.TabIndex = 23;
+            label11.Text = "Muito apreciada pelos nossos clientes!";
+            // 
+            // calabresocheck
+            // 
+            calabresocheck.Location = new Point(663, 356);
+            calabresocheck.Name = "calabresocheck";
+            calabresocheck.Size = new Size(155, 24);
+            calabresocheck.TabIndex = 24;
+            calabresocheck.Text = "Adicionar / Remover";
+            calabresocheck.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = SystemColors.Control;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(861, 249);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(215, 159);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 25;
+            pictureBox6.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(1082, 295);
+            label3.Name = "label3";
+            label3.Size = new Size(189, 58);
+            label3.TabIndex = 26;
+            label3.Text = "A pizza favorita dos amantes de frango.";
+            // 
+            // catupirocheck
+            // 
+            catupirocheck.Location = new Point(1082, 356);
+            catupirocheck.Name = "catupirocheck";
+            catupirocheck.Size = new Size(155, 24);
+            catupirocheck.TabIndex = 27;
+            catupirocheck.Text = "Adicionar / Remover";
+            catupirocheck.UseVisualStyleBackColor = true;
+            // 
+            // catupiro
+            // 
+            catupiro.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            catupiro.Location = new Point(1082, 254);
+            catupiro.Name = "catupiro";
+            catupiro.Size = new Size(227, 23);
+            catupiro.TabIndex = 28;
+            // 
+            // bebidabtn
+            // 
+            bebidabtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            bebidabtn.Location = new Point(172, 563);
+            bebidabtn.Name = "bebidabtn";
+            bebidabtn.Size = new Size(225, 56);
+            bebidabtn.TabIndex = 29;
+            bebidabtn.Text = "Bebidas";
+            bebidabtn.UseVisualStyleBackColor = true;
+            bebidabtn.Click += button1_Click;
             // 
             // pizzas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1321, 662);
-            Controls.Add(checkBox3);
+            Controls.Add(bebidabtn);
+            Controls.Add(catupiro);
+            Controls.Add(catupirocheck);
+            Controls.Add(label3);
+            Controls.Add(pictureBox6);
+            Controls.Add(calabresocheck);
+            Controls.Add(label11);
+            Controls.Add(calabreso);
+            Controls.Add(pictureBox5);
+            Controls.Add(portugueso);
+            Controls.Add(tugacheck);
+            Controls.Add(label8);
+            Controls.Add(pictureBox4);
+            Controls.Add(queijocheck);
             Controls.Add(label7);
-            Controls.Add(label6);
+            Controls.Add(queijudo);
             Controls.Add(pictureBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(pepperonocheck);
+            Controls.Add(margeritocheck);
             Controls.Add(label5);
-            Controls.Add(label4);
+            Controls.Add(pepperono);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
-            Controls.Add(label3);
+            Controls.Add(margerito);
             Controls.Add(pictureBox1);
             Controls.Add(fcbtn);
             Controls.Add(label1);
             Name = "pizzas";
-            Text = "a";
+            Text = "Sabor pizzas";
             Load += pizzas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -213,16 +370,29 @@
         private Label label1;
         private Button fcbtn;
         private PictureBox pictureBox1;
-        private Label label3;
+        private Label margerito;
         private Label label2;
         private PictureBox pictureBox2;
-        private Label label4;
+        private Label pepperono;
         private Label label5;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
+        private CheckBox margeritocheck;
+        private CheckBox pepperonocheck;
         private PictureBox pictureBox3;
-        private Label label6;
+        private Label queijudo;
         private Label label7;
-        private CheckBox checkBox3;
+        private CheckBox queijocheck;
+        private PictureBox pictureBox4;
+        private Label label8;
+        private CheckBox tugacheck;
+        private Label portugueso;
+        private PictureBox pictureBox5;
+        private Label calabreso;
+        private Label label11;
+        private CheckBox calabresocheck;
+        private PictureBox pictureBox6;
+        private Label label3;
+        private CheckBox catupirocheck;
+        private Label catupiro;
+        private Button bebidabtn;
     }
 }
