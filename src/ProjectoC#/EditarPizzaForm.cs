@@ -27,6 +27,7 @@ namespace ProjectoC_
 
         public class Pizza
         {
+            public int Id { get; set; }
             public string Nome { get; set; }
             public decimal Preco { get; set; }
         }
@@ -42,32 +43,44 @@ namespace ProjectoC_
             txtPrecoP.Text = pizza.Preco.ToString();
         }
 
+
         private Pizza ObterPizzaPorId(int id)
         {
+            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
+
             Pizza pizza = new Pizza();
 
-            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
-            string query = "SELECT nome, preco FROM sabor_pizzas WHERE sabor_id = @Id";
+            string query = "SELECT sabor_id, nome, preco FROM sabor_pizzas WHERE sabor_id = @Id";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-                SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
 
-                connection.Open();
-
-                using (SqlDataReader reader = command.ExecuteReader())
+                try
                 {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                     {
+                        pizza.Id = Convert.ToInt32(reader["sabor_id"]);
                         pizza.Nome = reader["nome"].ToString();
                         pizza.Preco = Convert.ToDecimal(reader["preco"]);
                     }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao obter dados da pizza: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
                 }
             }
 
             return pizza;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string novoNome = txtNomeP.Text;
@@ -76,7 +89,6 @@ namespace ProjectoC_
             if (decimal.TryParse(txtPrecoP.Text, out novoPreco))
             {
                 AtualizarPizza(pizzaId, novoNome, novoPreco);
-                MessageBox.Show("Pizza atualizada com sucesso!");
             }
             else
             {
@@ -89,17 +101,32 @@ namespace ProjectoC_
         {
 
             string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
+
             string query = "UPDATE sabor_pizzas SET nome = @Nome, preco = @Preco WHERE sabor_id = @Id";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-                SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 command.Parameters.AddWithValue("@Nome", nome);
                 command.Parameters.AddWithValue("@Preco", preco);
 
-                connection.Open();
-                command.ExecuteNonQuery();
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    MessageBox.Show($"Pizza atualizada com sucesso! Linhas afetadas: {rowsAffected}");
+
+                    // Sinaliza que a operação foi bem-sucedida
+                    this.DialogResult = DialogResult.OK;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao atualizar a pizza: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
         }
 

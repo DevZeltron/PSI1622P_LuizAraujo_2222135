@@ -131,7 +131,7 @@
             menuContainer.Location = new Point(3, 0);
             menuContainer.Margin = new Padding(3, 0, 3, 3);
             menuContainer.Name = "menuContainer";
-            menuContainer.Size = new Size(239, 46);
+            menuContainer.Size = new Size(239, 40);
             menuContainer.TabIndex = 3;
             menuContainer.Paint += menuContainer_Paint;
             // 
@@ -146,7 +146,7 @@
             menu.Location = new Point(0, -3);
             menu.Name = "menu";
             menu.Padding = new Padding(28, 0, 0, 0);
-            menu.Size = new Size(205, 48);
+            menu.Size = new Size(205, 41);
             menu.TabIndex = 4;
             menu.Text = "                  Menu";
             menu.TextAlign = ContentAlignment.MiddleLeft;
@@ -164,7 +164,7 @@
             submenu2.Location = new Point(0, 91);
             submenu2.Name = "submenu2";
             submenu2.Padding = new Padding(28, 0, 0, 0);
-            submenu2.Size = new Size(204, 48);
+            submenu2.Size = new Size(223, 48);
             submenu2.TabIndex = 5;
             submenu2.Text = "             Política de Privacidade";
             submenu2.TextAlign = ContentAlignment.MiddleLeft;
@@ -182,7 +182,7 @@
             submenu1.Location = new Point(0, 44);
             submenu1.Name = "submenu1";
             submenu1.Padding = new Padding(28, 0, 0, 0);
-            submenu1.Size = new Size(204, 37);
+            submenu1.Size = new Size(223, 41);
             submenu1.TabIndex = 2;
             submenu1.Text = "                 Sobre";
             submenu1.TextAlign = ContentAlignment.MiddleLeft;
@@ -197,7 +197,7 @@
             editbtn.ForeColor = Color.White;
             editbtn.Image = (Image)resources.GetObject("editbtn.Image");
             editbtn.ImageAlign = ContentAlignment.MiddleLeft;
-            editbtn.Location = new Point(3, 52);
+            editbtn.Location = new Point(3, 46);
             editbtn.Name = "editbtn";
             editbtn.Padding = new Padding(28, 0, 0, 0);
             editbtn.Size = new Size(205, 45);
@@ -215,7 +215,7 @@
             adcbtn.ForeColor = Color.White;
             adcbtn.Image = (Image)resources.GetObject("adcbtn.Image");
             adcbtn.ImageAlign = ContentAlignment.MiddleLeft;
-            adcbtn.Location = new Point(3, 103);
+            adcbtn.Location = new Point(3, 97);
             adcbtn.Name = "adcbtn";
             adcbtn.Padding = new Padding(28, 0, 0, 0);
             adcbtn.Size = new Size(205, 45);
@@ -233,7 +233,7 @@
             removebtn.ForeColor = Color.White;
             removebtn.Image = (Image)resources.GetObject("removebtn.Image");
             removebtn.ImageAlign = ContentAlignment.MiddleLeft;
-            removebtn.Location = new Point(3, 154);
+            removebtn.Location = new Point(3, 148);
             removebtn.Name = "removebtn";
             removebtn.Padding = new Padding(28, 0, 0, 0);
             removebtn.Size = new Size(205, 45);

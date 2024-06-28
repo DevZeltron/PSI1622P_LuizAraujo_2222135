@@ -56,11 +56,11 @@ WHERE username = 'admin';
 	FROM
 		information_schema.table_constraints
 	WHERE
-		table_name = 'pedido_recebido'
+		table_name = 'loginn'
 		AND constraint_type = 'FOREIGN KEY';
 
-		ALTER TABLE talao_recibo
-DROP CONSTRAINT FK__talao_rec__pedid__3B75D760;
+		ALTER TABLE pedido_recebido
+DROP CONSTRAINT FK__pedido_re__sabor__4AB81AF0;
 
 
 CREATE TABLE sabor_pizzas (
@@ -73,9 +73,9 @@ INSERT INTO sabor_pizzas (nome, preco) VALUES
 ('Margherita', 17.00),
 ('Pepperoni', 15.00),
 ('Quatro Queijos', 19.50),
-('Frango com Catupiry', 17.00),
+('Frango com Catupiry', 20.00),
 ('Calabresa', 16.00),
-('Portuguesa', 20.00);
+('Portuguesa', 18.00);
 
 UPDATE sabor_pizzas SET preco = 17.00 WHERE nome = 'Margherita';
 UPDATE sabor_pizzas SET preco = 15.00 WHERE nome = 'Pepperoni';
@@ -95,14 +95,7 @@ SELECT * FROM sabor_pizzas;
 
 
 
-CREATE TABLE pedido_recebido (
-    pedido_id INT IDENTITY(1,1) PRIMARY KEY,
-    user_id INT NOT NULL,
-    sabor_id INT NOT NULL,
-    quantity INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES loginn(user_id),
-    FOREIGN KEY (sabor_id) REFERENCES sabor_pizzas(sabor_id)
-);
+
 
 CREATE TABLE loginn (
     user_id INT IDENTITY(1,1) PRIMARY KEY,

@@ -28,37 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            dataGridSaborPizzasR = new DataGridView();
+            sabor = new DataGridViewTextBoxColumn();
+            dataGridBebidasR = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            removerP = new Button();
+            removerB = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridSaborPizzasR).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBebidasR).BeginInit();
             SuspendLayout();
             // 
-            // bigLabel1
+            // dataGridSaborPizzasR
             // 
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = Color.Transparent;
-            bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
-            bigLabel1.Location = new Point(299, 155);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(171, 46);
-            bigLabel1.TabIndex = 0;
-            bigLabel1.Text = "REMOVER";
+            dataGridSaborPizzasR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridSaborPizzasR.Columns.AddRange(new DataGridViewColumn[] { sabor });
+            dataGridSaborPizzasR.Location = new Point(12, 12);
+            dataGridSaborPizzasR.Name = "dataGridSaborPizzasR";
+            dataGridSaborPizzasR.RowTemplate.Height = 25;
+            dataGridSaborPizzasR.Size = new Size(500, 210);
+            dataGridSaborPizzasR.TabIndex = 4;
+            // 
+            // sabor
+            // 
+            sabor.DataPropertyName = "sabor_id, nome, preco";
+            sabor.HeaderText = "";
+            sabor.Name = "sabor";
+            // 
+            // dataGridBebidasR
+            // 
+            dataGridBebidasR.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridBebidasR.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
+            dataGridBebidasR.Location = new Point(12, 287);
+            dataGridBebidasR.Name = "dataGridBebidasR";
+            dataGridBebidasR.RowTemplate.Height = 25;
+            dataGridBebidasR.Size = new Size(500, 210);
+            dataGridBebidasR.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "bebida_id, nomebev, preco";
+            dataGridViewTextBoxColumn1.HeaderText = "";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // removerP
+            // 
+            removerP.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            removerP.Location = new Point(548, 93);
+            removerP.Name = "removerP";
+            removerP.Size = new Size(175, 44);
+            removerP.TabIndex = 6;
+            removerP.Text = "Remover";
+            removerP.UseVisualStyleBackColor = true;
+            removerP.Click += removerP_Click;
+            // 
+            // removerB
+            // 
+            removerB.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            removerB.Location = new Point(548, 368);
+            removerB.Name = "removerB";
+            removerB.Size = new Size(175, 44);
+            removerB.TabIndex = 7;
+            removerB.Text = "Remover";
+            removerB.UseVisualStyleBackColor = true;
+            removerB.Click += removerB_Click;
             // 
             // removeradm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(bigLabel1);
+            ClientSize = new Size(897, 509);
+            Controls.Add(removerB);
+            Controls.Add(removerP);
+            Controls.Add(dataGridBebidasR);
+            Controls.Add(dataGridSaborPizzasR);
             FormBorderStyle = FormBorderStyle.None;
             Name = "removeradm";
             Text = "removeradm";
             Load += removeradm_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridSaborPizzasR).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBebidasR).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private DataGridView dataGridSaborPizzasR;
+        private DataGridViewTextBoxColumn sabor;
+        private DataGridView dataGridBebidasR;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private Button removerP;
+        private Button removerB;
     }
 }

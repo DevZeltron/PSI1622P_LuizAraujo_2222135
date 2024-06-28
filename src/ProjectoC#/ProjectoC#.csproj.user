@@ -25,6 +25,18 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormAdicionarBebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdicionarPizzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formmoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formulariocartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="menuhome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -32,6 +44,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="pizzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RemoveBebida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RemovePizza.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="removeradm.cs">

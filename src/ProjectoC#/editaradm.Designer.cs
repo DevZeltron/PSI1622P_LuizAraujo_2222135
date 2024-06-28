@@ -29,15 +29,13 @@
         private void InitializeComponent()
         {
             dataGridPizzas = new DataGridView();
+            sabor = new DataGridViewTextBoxColumn();
             dataGridBebida = new DataGridView();
+            Bebida = new DataGridViewTextBoxColumn();
             Editarbtn = new Button();
             EditarBbtn = new Button();
             bebida_id = new DataGridViewTextBoxColumn();
             nomebev = new DataGridViewTextBoxColumn();
-            sabor_id = new DataGridViewTextBoxColumn();
-            bebida = new DataGridViewTextBoxColumn();
-            nomebebida = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridPizzas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridBebida).BeginInit();
             SuspendLayout();
@@ -45,26 +43,38 @@
             // dataGridPizzas
             // 
             dataGridPizzas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridPizzas.Columns.AddRange(new DataGridViewColumn[] { sabor_id });
+            dataGridPizzas.Columns.AddRange(new DataGridViewColumn[] { sabor });
             dataGridPizzas.Location = new Point(26, 12);
             dataGridPizzas.Name = "dataGridPizzas";
             dataGridPizzas.RowTemplate.Height = 25;
-            dataGridPizzas.Size = new Size(550, 255);
+            dataGridPizzas.Size = new Size(500, 215);
             dataGridPizzas.TabIndex = 1;
+            // 
+            // sabor
+            // 
+            sabor.DataPropertyName = "sabor_id, nome, preco";
+            sabor.HeaderText = "";
+            sabor.Name = "sabor";
             // 
             // dataGridBebida
             // 
             dataGridBebida.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridBebida.Columns.AddRange(new DataGridViewColumn[] { bebida, nomebebida, dataGridViewTextBoxColumn1 });
-            dataGridBebida.Location = new Point(26, 397);
+            dataGridBebida.Columns.AddRange(new DataGridViewColumn[] { Bebida });
+            dataGridBebida.Location = new Point(26, 396);
             dataGridBebida.Name = "dataGridBebida";
             dataGridBebida.RowTemplate.Height = 25;
-            dataGridBebida.Size = new Size(550, 255);
+            dataGridBebida.Size = new Size(500, 210);
             dataGridBebida.TabIndex = 2;
+            // 
+            // Bebida
+            // 
+            Bebida.DataPropertyName = "bebida_id, nome, preco";
+            Bebida.HeaderText = "";
+            Bebida.Name = "Bebida";
             // 
             // Editarbtn
             // 
-            Editarbtn.Location = new Point(618, 80);
+            Editarbtn.Location = new Point(563, 85);
             Editarbtn.Name = "Editarbtn";
             Editarbtn.Size = new Size(202, 52);
             Editarbtn.TabIndex = 3;
@@ -74,7 +84,7 @@
             // 
             // EditarBbtn
             // 
-            EditarBbtn.Location = new Point(618, 479);
+            EditarBbtn.Location = new Point(563, 486);
             EditarBbtn.Name = "EditarBbtn";
             EditarBbtn.Size = new Size(202, 52);
             EditarBbtn.TabIndex = 4;
@@ -93,30 +103,6 @@
             nomebev.DataPropertyName = "nomebev";
             nomebev.HeaderText = "nomebev";
             nomebev.Name = "nomebev";
-            // 
-            // sabor_id
-            // 
-            sabor_id.DataPropertyName = "sabor_id, name, preco";
-            sabor_id.HeaderText = "sabor_id";
-            sabor_id.Name = "sabor_id";
-            // 
-            // bebida
-            // 
-            bebida.DataPropertyName = "bebida_id, nome, preco";
-            bebida.HeaderText = "bebida_id";
-            bebida.Name = "bebida";
-            // 
-            // nomebebida
-            // 
-            nomebebida.DataPropertyName = "bebida_id";
-            nomebebida.HeaderText = "nome";
-            nomebebida.Name = "nomebebida";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "preco";
-            dataGridViewTextBoxColumn1.HeaderText = "preco";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // editaradm
             // 
@@ -143,9 +129,9 @@
         private Button EditarBbtn;
         private DataGridViewTextBoxColumn bebida_id;
         private DataGridViewTextBoxColumn nomebev;
-        private DataGridViewTextBoxColumn sabor_id;
-        private DataGridViewTextBoxColumn bebida;
         private DataGridViewTextBoxColumn nomebebida;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn sabor;
+        private DataGridViewTextBoxColumn Bebida;
     }
 }

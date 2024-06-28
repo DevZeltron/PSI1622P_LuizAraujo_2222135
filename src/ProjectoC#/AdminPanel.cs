@@ -113,8 +113,6 @@ namespace ProjectoC_
                     sidebarTransition.Stop();
 
                     menu.Width = sidebar.Width;
-                    sub1.Width = sidebar.Width;
-                    sub2.Width = sidebar.Width;
                     editbtn.Width = sidebar.Width;
                     adcbtn.Width = sidebar.Width;
                     removebtn.Width = sidebar.Width;
@@ -129,8 +127,6 @@ namespace ProjectoC_
                     sidebarTransition.Stop();
 
                     menu.Width = sidebar.Width;
-                    sub1.Width = sidebar.Width;
-                    sub2.Width = sidebar.Width;
                     editbtn.Width = sidebar.Width;
                     adcbtn.Width = sidebar.Width;
                     removebtn.Width = sidebar.Width;

@@ -36,7 +36,6 @@ namespace ProjectoC_
         private void fcbtn_Click(object sender, EventArgs e)
         {
             List<decimal> precosPizzasSelecionadas = new List<decimal>();
-
             AdicionarPrecoSeSelecionado(margeritocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(pepperonocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(queijocheck, precosPizzasSelecionadas);
@@ -44,15 +43,18 @@ namespace ProjectoC_
             AdicionarPrecoSeSelecionado(calabresocheck, precosPizzasSelecionadas);
             AdicionarPrecoSeSelecionado(catupirocheck, precosPizzasSelecionadas);
 
-            // Abre o formulário de bebidas e espera até que ele seja fechado
-            bebidas bevForm = new bebidas();
-            
+            // Criar formulário de bebidas e obter os preços das bebidas selecionadas
+            bebidas bebForm = new bebidas();
+            bebForm.ShowDialog(); // Mostra o formulário de bebidas modalmente
 
-            // Obtém os preços das bebidas selecionadas
-            List<decimal> precosBebidasSelecionadas = bevForm.ObterPrecosBebidasSelecionadas();
 
-            pagamento pay = new pagamento(precosPizzasSelecionadas, precosBebidasSelecionadas);
-            pay.Show();
+
+
+            List<decimal> precosBebidasSelecionadas = bebForm.ObterPrecosBebidasSelecionadas();
+
+            // Criar formulário de pagamento e passar os preços das pizzas e bebidas selecionadas
+            pagamento pagamentoForm = new pagamento(precosPizzasSelecionadas, precosBebidasSelecionadas);
+            pagamentoForm.Show();
             this.Hide();
         }
 
@@ -268,9 +270,11 @@ namespace ProjectoC_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bebidas bev =  new bebidas();
+           /* bebidas bebForm = new bebidas();
+            bebForm.Show(); // Mostra o formulário de bebidas para seleção
 
-            bev.Show();
+            List<decimal> precosBebidasSelecionadas = bebForm.ObterPrecosBebidasSelecionadas();*/
+
         }
     }
 }

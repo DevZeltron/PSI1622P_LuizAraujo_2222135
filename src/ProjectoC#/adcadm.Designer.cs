@@ -28,37 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            adcPbtn = new Button();
+            dataGridViewSaborPizzas = new DataGridView();
+            sabor = new DataGridViewTextBoxColumn();
+            dataGridViewBebidas = new DataGridView();
+            adcBevbtn = new Button();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSaborPizzas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBebidas).BeginInit();
             SuspendLayout();
             // 
-            // bigLabel1
+            // adcPbtn
             // 
-            bigLabel1.AutoSize = true;
-            bigLabel1.BackColor = Color.Transparent;
-            bigLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            bigLabel1.ForeColor = Color.FromArgb(80, 80, 80);
-            bigLabel1.Location = new Point(285, 160);
-            bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(198, 46);
-            bigLabel1.TabIndex = 0;
-            bigLabel1.Text = "ADICIONAR";
+            adcPbtn.Location = new Point(557, 90);
+            adcPbtn.Name = "adcPbtn";
+            adcPbtn.Size = new Size(180, 61);
+            adcPbtn.TabIndex = 1;
+            adcPbtn.Text = "Adicionar";
+            adcPbtn.UseVisualStyleBackColor = true;
+            adcPbtn.Click += button1_Click;
+            // 
+            // dataGridViewSaborPizzas
+            // 
+            dataGridViewSaborPizzas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSaborPizzas.Columns.AddRange(new DataGridViewColumn[] { sabor });
+            dataGridViewSaborPizzas.Location = new Point(12, 12);
+            dataGridViewSaborPizzas.Name = "dataGridViewSaborPizzas";
+            dataGridViewSaborPizzas.RowTemplate.Height = 25;
+            dataGridViewSaborPizzas.Size = new Size(500, 210);
+            dataGridViewSaborPizzas.TabIndex = 3;
+            // 
+            // sabor
+            // 
+            sabor.DataPropertyName = "sabor_id, nome, preco";
+            sabor.HeaderText = "";
+            sabor.Name = "sabor";
+            // 
+            // dataGridViewBebidas
+            // 
+            dataGridViewBebidas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewBebidas.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
+            dataGridViewBebidas.Location = new Point(12, 270);
+            dataGridViewBebidas.Name = "dataGridViewBebidas";
+            dataGridViewBebidas.RowTemplate.Height = 25;
+            dataGridViewBebidas.Size = new Size(500, 210);
+            dataGridViewBebidas.TabIndex = 4;
+            // 
+            // adcBevbtn
+            // 
+            adcBevbtn.Location = new Point(557, 348);
+            adcBevbtn.Name = "adcBevbtn";
+            adcBevbtn.Size = new Size(180, 61);
+            adcBevbtn.TabIndex = 5;
+            adcBevbtn.Text = "Adicionar";
+            adcBevbtn.UseVisualStyleBackColor = true;
+            adcBevbtn.Click += adcBevbtn_Click;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "bebida_id, nomebev, preco";
+            dataGridViewTextBoxColumn1.HeaderText = "";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // adcadm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(bigLabel1);
+            ClientSize = new Size(860, 492);
+            Controls.Add(adcBevbtn);
+            Controls.Add(dataGridViewBebidas);
+            Controls.Add(dataGridViewSaborPizzas);
+            Controls.Add(adcPbtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "adcadm";
             Text = "adcadm";
             Load += adcadm_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSaborPizzas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBebidas).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private Button adcPbtn;
+        private DataGridView dataGridViewSaborPizzas;
+        private DataGridViewTextBoxColumn sabor;
+        private DataGridView dataGridViewBebidas;
+        private Button adcBevbtn;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

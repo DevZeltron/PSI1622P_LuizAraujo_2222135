@@ -38,10 +38,8 @@
             label4 = new Label();
             itenslbl = new Label();
             totalp = new Label();
-            pictureBox2 = new PictureBox();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -75,9 +73,9 @@
             // finalizarcompra
             // 
             finalizarcompra.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            finalizarcompra.Location = new Point(342, 440);
+            finalizarcompra.Location = new Point(329, 432);
             finalizarcompra.Name = "finalizarcompra";
-            finalizarcompra.Size = new Size(191, 44);
+            finalizarcompra.Size = new Size(212, 52);
             finalizarcompra.TabIndex = 5;
             finalizarcompra.Text = "Finalizar compra";
             finalizarcompra.UseVisualStyleBackColor = true;
@@ -134,16 +132,6 @@
             totalp.TabIndex = 11;
             totalp.Click += totalp_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(583, 123);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(305, 274);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
-            // 
             // label3
             // 
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -159,7 +147,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(909, 496);
             Controls.Add(label3);
-            Controls.Add(pictureBox2);
             Controls.Add(totalp);
             Controls.Add(itenslbl);
             Controls.Add(label4);
@@ -173,7 +160,6 @@
             Text = "pagamento";
             Load += pagamento_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -189,7 +175,6 @@
         private Label label4;
         private Label itenslbl;
         private Label totalp;
-        private PictureBox pictureBox2;
         private Label label3;
     }
 }

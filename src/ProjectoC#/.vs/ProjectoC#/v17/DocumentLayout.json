@@ -3,52 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|c:\\users\\user\\onedrive - escola digital\\! psi\\sla\\psi1622p_luizaraujo_2222135\\src\\projectoc#\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|c:\\users\\user\\onedrive - escola digital\\! psi\\sla\\psi1622p_luizaraujo_2222135\\src\\projectoc#\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|c:\\users\\user\\onedrive - escola digital\\! psi\\sla\\psi1622p_luizaraujo_2222135\\src\\projectoc#\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|c:\\users\\user\\onedrive - escola digital\\! psi\\sla\\psi1622p_luizaraujo_2222135\\src\\projectoc#\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|c:\\users\\user\\onedrive - escola digital\\! psi\\sla\\psi1622p_luizaraujo_2222135\\src\\projectoc#\\pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\formmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:formmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\formulariocartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:formulariocartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\formulariocartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:formulariocartao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\formmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:formmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:pizzas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removepizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removepizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removebebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removebebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:editaradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removeradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removeradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removebebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removebebida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removepizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:removepizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:editaradm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:adcadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:adcadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6CAB0E86-1F25-450D-933B-942DB50B82A8}|ProjectoC#.csproj|solutionrelative:criacaoconta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,11 +114,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
+              "Title": "removeradm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs",
+              "RelativeDocumentMoniker": "removeradm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs [Projeto]",
+              "RelativeToolTip": "removeradm.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T20:34:54.447Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "removeradm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs",
+              "RelativeDocumentMoniker": "removeradm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\removeradm.cs",
+              "RelativeToolTip": "removeradm.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAqwCEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T20:34:58.074Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "adcadm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs",
+              "RelativeDocumentMoniker": "adcadm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs",
+              "RelativeToolTip": "adcadm.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswFoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T21:13:44.207Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pizzas.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs",
+              "RelativeDocumentMoniker": "pizzas.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs",
+              "RelativeToolTip": "pizzas.cs",
+              "ViewState": "AQIAAPwAAAAAAAAAAAAAABABAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T21:42:54.464Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "pizzas.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs",
               "RelativeDocumentMoniker": "pizzas.cs",
@@ -70,40 +177,150 @@
               "RelativeToolTip": "pizzas.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T21:42:54.465Z",
-              "IsPinned": true,
-              "EditorCaption": " [Projeto]"
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Formmoney.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formmoney.cs",
+              "RelativeDocumentMoniker": "Formmoney.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formmoney.cs",
+              "RelativeToolTip": "Formmoney.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAiwCoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T22:22:40.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Formmoney.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formmoney.cs",
+              "RelativeDocumentMoniker": "Formmoney.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formmoney.cs [Projeto]",
+              "RelativeToolTip": "Formmoney.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T22:21:09.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Formulariocartao.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formulariocartao.cs",
+              "RelativeDocumentMoniker": "Formulariocartao.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formulariocartao.cs",
+              "RelativeToolTip": "Formulariocartao.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T22:15:54.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Formulariocartao.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formulariocartao.cs",
+              "RelativeDocumentMoniker": "Formulariocartao.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Formulariocartao.cs [Projeto]",
+              "RelativeToolTip": "Formulariocartao.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T22:11:46.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RemoveBebida.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemoveBebida.cs",
+              "RelativeDocumentMoniker": "RemoveBebida.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemoveBebida.cs",
+              "RelativeToolTip": "RemoveBebida.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAADwv08AAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T21:32:29.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "editaradm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs",
+              "RelativeDocumentMoniker": "editaradm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs",
+              "RelativeToolTip": "editaradm.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwH8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T21:13:55.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "editaradm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs",
+              "RelativeDocumentMoniker": "editaradm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\editaradm.cs [Projeto]",
+              "RelativeToolTip": "editaradm.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T21:13:52.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RemovePizza.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemovePizza.cs",
+              "RelativeDocumentMoniker": "RemovePizza.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemovePizza.cs",
+              "RelativeToolTip": "RemovePizza.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEoAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T21:08:06.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RemoveBebida.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemoveBebida.cs",
+              "RelativeDocumentMoniker": "RemoveBebida.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemoveBebida.cs [Projeto]",
+              "RelativeToolTip": "RemoveBebida.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T20:54:11.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RemovePizza.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemovePizza.cs",
+              "RelativeDocumentMoniker": "RemovePizza.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\RemovePizza.cs [Projeto]",
+              "RelativeToolTip": "RemovePizza.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T20:53:43.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "adcadm.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs",
+              "RelativeDocumentMoniker": "adcadm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\adcadm.cs [Projeto]",
+              "RelativeToolTip": "adcadm.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T20:41:19.348Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "pizzas.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs",
-              "RelativeDocumentMoniker": "pizzas.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pizzas.cs",
-              "RelativeToolTip": "pizzas.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAkwDIAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:42:54.464Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "pagamento.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pagamento.cs",
               "RelativeDocumentMoniker": "pagamento.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pagamento.cs",
               "RelativeToolTip": "pagamento.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwDMAAAAcAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvygAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T22:56:09.975Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "pagamento.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\pagamento.cs",
               "RelativeDocumentMoniker": "pagamento.cs",
@@ -121,88 +338,81 @@
               "RelativeDocumentMoniker": "bebidas.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\bebidas.cs",
               "RelativeToolTip": "bebidas.cs",
-              "ViewState": "AQIAAP0AAAAAAAAAAAAAwCUBAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAiwC8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T21:13:02.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T21:13:02.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "bebidas.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\bebidas.cs",
               "RelativeDocumentMoniker": "bebidas.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\bebidas.cs [Projeto]",
               "RelativeToolTip": "bebidas.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T20:21:18.75Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-06-27T20:21:18.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "AdminPanel.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\AdminPanel.cs",
               "RelativeDocumentMoniker": "AdminPanel.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\AdminPanel.cs",
               "RelativeToolTip": "AdminPanel.cs",
-              "ViewState": "AQIAAPoAAAAAAAAAAAAAAIQAAAAvAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAIA4wIAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:02:16.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T16:02:16.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "AdminPanel.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\AdminPanel.cs",
               "RelativeDocumentMoniker": "AdminPanel.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\AdminPanel.cs [Projeto]",
               "RelativeToolTip": "AdminPanel.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:42:54.455Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-06-23T21:42:54.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAcwDAAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:42:54.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T21:42:54.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\Form1.cs [Projeto]",
               "RelativeToolTip": "Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T20:52:57.04Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-06-24T20:52:57.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "criacaoconta.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs",
               "RelativeDocumentMoniker": "criacaoconta.cs",
               "ToolTip": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs [Projeto]",
               "RelativeToolTip": "criacaoconta.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:42:54.468Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-06-23T21:42:54.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 24,
               "Title": "criacaoconta.cs",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Escola Digital\\! PSI\\sla\\PSI1622P_LuizAraujo_2222135\\src\\ProjectoC#\\criacaoconta.cs",
               "RelativeDocumentMoniker": "criacaoconta.cs",
@@ -210,8 +420,7 @@
               "RelativeToolTip": "criacaoconta.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAewCIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:42:54.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T21:42:54.467Z"
             }
           ]
         }

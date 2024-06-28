@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +39,7 @@ namespace ProjectoC_
             editaradm bebida = new editaradm();
 
             string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
-            string query = "SELECT nome, preco FROM Bebidas WHERE Id = @Id";
+            string query = "SELECT nomebev, preco FROM Bebida WHERE bebida_id = @Id";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -62,31 +63,40 @@ namespace ProjectoC_
 
         private void AtualizarBebida(int id, string nome, decimal preco)
         {
-            string connectionString = "sua_connection_string_aqui";
-            string query = "UPDATE Bebidas SET nomebev = @Nome, preco = @Preco WHERE bebida_id = @Id";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=Pizzaria;Trusted_Connection=True;TrustServerCertificate=True";
+            string query = "UPDATE Bebida SET nomebev = @Nome, preco = @Preco WHERE bebida_id = @Id";
+            using (SqlConnection connection = new SqlConnection(stringconexao))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 command.Parameters.AddWithValue("@Nome", nome);
                 command.Parameters.AddWithValue("@Preco", preco);
 
-                connection.Open();
-                command.ExecuteNonQuery();
+                try
+                {
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    MessageBox.Show($"Bebida atualizada com sucesso! Linhas afetadas: {rowsAffected}");
+
+                    // Sinaliza que a operação foi bem-sucedida
+                    this.DialogResult = DialogResult.OK;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao atualizar a bebida: " + ex.Message);
+                }
             }
         }
 
         private void salvarbebida_Click(object sender, EventArgs e)
         {
-           
+
             string novoNome = txtNomeb.Text;
             decimal novoPreco;
 
             if (decimal.TryParse(txtPrecob.Text, out novoPreco))
             {
                 AtualizarBebida(bebidaId, novoNome, novoPreco);
-                MessageBox.Show("Bebida atualizada com sucesso!");
             }
             else
             {
