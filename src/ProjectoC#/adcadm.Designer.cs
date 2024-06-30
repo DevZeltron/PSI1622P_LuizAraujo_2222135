@@ -32,8 +32,8 @@
             dataGridViewSaborPizzas = new DataGridView();
             sabor = new DataGridViewTextBoxColumn();
             dataGridViewBebidas = new DataGridView();
-            adcBevbtn = new Button();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            adcBevbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSaborPizzas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBebidas).BeginInit();
             SuspendLayout();
@@ -44,7 +44,7 @@
             adcPbtn.Name = "adcPbtn";
             adcPbtn.Size = new Size(180, 61);
             adcPbtn.TabIndex = 1;
-            adcPbtn.Text = "Adicionar";
+            adcPbtn.Text = "Adicionar Pizza";
             adcPbtn.UseVisualStyleBackColor = true;
             adcPbtn.Click += button1_Click;
             // 
@@ -74,21 +74,21 @@
             dataGridViewBebidas.Size = new Size(500, 210);
             dataGridViewBebidas.TabIndex = 4;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "bebida_id, nomebev, preco";
+            dataGridViewTextBoxColumn1.HeaderText = "";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
             // adcBevbtn
             // 
             adcBevbtn.Location = new Point(557, 348);
             adcBevbtn.Name = "adcBevbtn";
             adcBevbtn.Size = new Size(180, 61);
             adcBevbtn.TabIndex = 5;
-            adcBevbtn.Text = "Adicionar";
+            adcBevbtn.Text = "Adicionar Bebida";
             adcBevbtn.UseVisualStyleBackColor = true;
             adcBevbtn.Click += adcBevbtn_Click;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "bebida_id, nomebev, preco";
-            dataGridViewTextBoxColumn1.HeaderText = "";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // adcadm
             // 

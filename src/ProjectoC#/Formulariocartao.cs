@@ -15,15 +15,17 @@ namespace ProjectoC_
         public Formulariocartao()
         {
             InitializeComponent();
+            senhatxt.UseSystemPasswordChar = true;
         }
 
         private void confirm_Click(object sender, EventArgs e)
         {
             string senha = senhatxt.Text;
 
-            senhatxt.UseSystemPasswordChar = true;
+            
 
             MessageBox.Show($"Obrigado pela sua compra! Volte sempre :)");
+            this.Close();
         }
     }
 }

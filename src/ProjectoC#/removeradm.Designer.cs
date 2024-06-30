@@ -77,18 +77,18 @@
             removerP.Name = "removerP";
             removerP.Size = new Size(175, 44);
             removerP.TabIndex = 6;
-            removerP.Text = "Remover";
+            removerP.Text = "Remover Pizza";
             removerP.UseVisualStyleBackColor = true;
             removerP.Click += removerP_Click;
             // 
             // removerB
             // 
             removerB.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            removerB.Location = new Point(548, 368);
+            removerB.Location = new Point(548, 364);
             removerB.Name = "removerB";
             removerB.Size = new Size(175, 44);
             removerB.TabIndex = 7;
-            removerB.Text = "Remover";
+            removerB.Text = "Remover Bebida";
             removerB.UseVisualStyleBackColor = true;
             removerB.Click += removerB_Click;
             // 

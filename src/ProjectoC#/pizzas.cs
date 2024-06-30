@@ -270,11 +270,11 @@ namespace ProjectoC_
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* bebidas bebForm = new bebidas();
-            bebForm.Show(); // Mostra o formulário de bebidas para seleção
+            /* bebidas bebForm = new bebidas();
+             bebForm.Show(); // Mostra o formulário de bebidas para seleção
 
-            List<decimal> precosBebidasSelecionadas = bebForm.ObterPrecosBebidasSelecionadas();*/
-
+             List<decimal> precosBebidasSelecionadas = bebForm.ObterPrecosBebidasSelecionadas();*/
+            
         }
     }
 }

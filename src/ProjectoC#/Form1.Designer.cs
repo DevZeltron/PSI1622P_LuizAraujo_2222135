@@ -96,6 +96,7 @@
             passlogin.Name = "passlogin";
             passlogin.Size = new Size(326, 28);
             passlogin.TabIndex = 6;
+            passlogin.UseSystemPasswordChar = true;
             // 
             // label2
             // 

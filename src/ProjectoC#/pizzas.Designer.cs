@@ -55,7 +55,6 @@
             label3 = new Label();
             catupirocheck = new CheckBox();
             catupiro = new Label();
-            bebidabtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -75,7 +74,7 @@
             // fcbtn
             // 
             fcbtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            fcbtn.Location = new Point(710, 563);
+            fcbtn.Location = new Point(535, 595);
             fcbtn.Margin = new Padding(2);
             fcbtn.Name = "fcbtn";
             fcbtn.Size = new Size(207, 56);
@@ -309,23 +308,11 @@
             catupiro.Size = new Size(227, 23);
             catupiro.TabIndex = 28;
             // 
-            // bebidabtn
-            // 
-            bebidabtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            bebidabtn.Location = new Point(172, 563);
-            bebidabtn.Name = "bebidabtn";
-            bebidabtn.Size = new Size(225, 56);
-            bebidabtn.TabIndex = 29;
-            bebidabtn.Text = "Bebidas";
-            bebidabtn.UseVisualStyleBackColor = true;
-            bebidabtn.Click += button1_Click;
-            // 
             // pizzas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1321, 662);
-            Controls.Add(bebidabtn);
             Controls.Add(catupiro);
             Controls.Add(catupirocheck);
             Controls.Add(label3);
@@ -393,6 +380,5 @@
         private Label label3;
         private CheckBox catupirocheck;
         private Label catupiro;
-        private Button bebidabtn;
     }
 }

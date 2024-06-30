@@ -41,6 +41,7 @@ namespace ProjectoC_
             totalp.Text = $"Total a pagar: € {total:F2}";
         }
 
+
         private void pagamento_Load(object sender, EventArgs e)
         {
 
@@ -91,10 +92,13 @@ namespace ProjectoC_
                     // 7. Informar que o valor inserido é inválido
                     MessageBox.Show("Valor inserido inválido. Por favor, insira um valor numérico.");
                 }
+
+                
             }
 
 
          }
+        
 
             private void totalp_Click(object sender, EventArgs e)
             {

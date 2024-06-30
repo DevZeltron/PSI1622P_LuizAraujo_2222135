@@ -71,7 +71,7 @@ CREATE TABLE sabor_pizzas (
 
 INSERT INTO sabor_pizzas (nome, preco) VALUES
 ('Margherita', 17.00),
-('Pepperoni', 15.00),
+('Pepperoni', 16.00),
 ('Quatro Queijos', 19.50),
 ('Frango com Catupiry', 20.00),
 ('Calabresa', 16.00),
@@ -127,6 +127,8 @@ SELECT * FROM Bebida;
 SELECT * FROM sabor_pizzas;
 
 SELECT * FROM loginn;
+
+
 
 
 

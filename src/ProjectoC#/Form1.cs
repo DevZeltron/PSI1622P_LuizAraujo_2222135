@@ -17,7 +17,8 @@ namespace ProjectoC_
         public Form1()
         {
             InitializeComponent();
-            // createacclink.LinkClicked += new LinkLabelLinkClickedEventHandler(createacclink_LinkClicked);
+            passlogin.UseSystemPasswordChar = true;
+            
         }
 
         /* private void button1_Click(object sender, EventArgs e)
