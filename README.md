@@ -5,7 +5,7 @@
 ### Introdução
 O projeto “Pizzaria Raimundo” é um programa que tem como objetivo integrar uma pizzaria virtual, onde o utilizador pode escolher entre pizzas e bebidas. O ponto principal do projeto é permitir ao utilizador fazer escolhas entre pizzas e bebidas e, depois de escolher seus produtos desejados, realizar a compra no final do programa. O projeto permite também que o administrador do sistema possa modificar os produtos da sua pizzaria para que o utilizador tenha uma experiência agradável.
 
-Neste relatório, vou relatar as tecnologias que utilizei para realizar este projeto, o processo de implementação, o cronograma e os aspetos técnicos de desenvolvimento do meu projeto.
+
 
 ### Tecnologias e Recursos
 
